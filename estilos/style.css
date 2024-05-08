@@ -173,7 +173,7 @@ div > p{
 
 /* ==============================        Pagina Gradezas      =============================== */
 
-section.texto {
+section#principal {
     margin: auto;
     width: 100vw;
     height: 100vh;
@@ -183,7 +183,7 @@ section.texto {
     margin-top: 15px;
 }
 
-section.texto > h1{
+section#principal > h1{
     display: block;
     margin: auto;
     margin-bottom: -20px;
@@ -199,11 +199,10 @@ section.texto > h1{
 
     padding: 10px;
 
-  
 }
 
-section.texto > p{
-    display: block;
+section#principal > section.caixa{
+    display: none;
     width: 260px;
     margin: auto;
     padding: 25px 10px ;
@@ -213,7 +212,13 @@ section.texto > p{
 
     border: 3px dotted var(--cor5);
     border-radius: 5px;
+}
 
+section.caixa > h2{
+    text-align: center;
+    font-family: var(--font-paragrafo);
+    font-size: 1.3em;
+    padding: 7px;
 }
 
 .produto{
@@ -222,4 +227,77 @@ section.texto > p{
 
 .pessoa{
     color: var(--cor4);
+}
+
+fieldset{
+    position: relative;
+    background-color: lightgoldenrodyellow;
+    border: 3px solid var(--cor4);
+    padding: 10px;
+}
+
+legend{
+    font-size: 1.3em;
+    text-align: center;
+    font-family: var(--font-titulo);
+
+    background-color: var(--cor4);
+    color: var(--cor1);
+    border: 2px solid var(--cor6);
+    border-radius: 7px;
+
+    padding: 8px;
+}
+
+label{
+    text-align: left;
+    font-size: 1.2em;
+    text-transform: uppercase;
+
+}
+
+input[type='number']{
+    position: absolute;
+    left: 146px;
+    text-align: center;
+    width: 50px;
+    height: 20px;
+    margin-top: 5px;
+
+    border: 2px solid var(--cor4);
+}
+
+#icorrente{
+    top: 2px;
+}
+
+#iresistencia{
+    top: 28px;
+}
+
+input[type='button']{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    width: 100px;
+    height: 40px;
+
+    text-align: center;
+    font-size: 1em;
+    font-family: var(--font-paragrafo);
+    text-transform: uppercase;
+
+    background-color: var(--cor4);
+    border: 3px solid var(--cor6);
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.329);
+    color: white;
+}
+
+fieldset > div#res{
+    text-align: center;
+    font-size: 1em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 10px;
 }

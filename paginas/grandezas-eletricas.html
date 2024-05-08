@@ -21,17 +21,60 @@
         </ul>
     </menu>
     <main>
-        <section class="texto">
+        <section id="principal">
             <h1 onclick="visivel_01()">Volt (V)</h1>
-            <p id="volt_sig"><strong class="produto">Tensão elétrica</strong>, também conhecida como diferença de potencial, é a diferença de potencial elétrico entre dois pontos ou a diferença em energia potencial elétrica por unidade de carga elétrica entre dois pontos. Sua unidade de medida é o <strong class="produto">volt</strong> homenagem ao físico italiano <strong class="pessoa">Alessandro Volta</strong></p>
+            <section class="caixa" id="volt">
+                <p><strong class="produto">Tensão elétrica</strong>, também conhecida como diferença de potencial, é a diferença de potencial elétrico entre dois pontos. Sua unidade de medida é o <strong class="produto">VOLT</strong> homenagem ao físico italiano <strong class="pessoa">Alessandro Volta</strong>.<br>
+                Em termos simples, a tensão Elétrica de forma comparativa seria a força necessária para movimentar os elétrons e criar assim uma corrente elétrica. Pode ser gerada por várias fontes, como baterias, geradores ou células solares.</p><br>
+                <h2>Cálculos</h2>
+                <p>Abaixo temos 3 tipos de calculos para encontrar o valor da tensão elétrica com base em outras grandezas, que são: <strong class="produto"><br>Corrente(I) <br>Resistencia(R) <br>Potencia(P)</p></strong>
+
+                <fieldset>
+                    <legend>I x R</legend>
+                    <label for="icorrente">Corrente: </label>
+                    <input type="number" name="corrente" id="icorrente"><br>
+                    <label for="iresistencia">Resistencia: </label>
+                    <input type="number" name="resistencia" id="iresistencia"><br>
+                    <input type="button" value="calcular" id="calcular" onclick="tensao1()">
+                    <div id="res"></div>
+                </fieldset>
+
+            </section>
+                
+            
         </section>
     </main>
 
     <script>
+        var tcorrente = window.document.getElementById('icorrente')
+        var tresistencia = window.document.getElementById('iresistencia')
+        var res = window.document.getElementById('res')
+        var calcular = window.document.getElementById('calcular')
+
+        calcular.addEventListener('mouseenter' , entrou)
+        calcular.addEventListener('mouseout' , saiu)
+
+        function entrou(){
+            calcular.style.background = '#F5A302'
+            calcular.style.color = '#0C1E34'
+        }
+
+        function saiu(){
+            calcular.style.background = '#033C59'
+            calcular.style.color = 'white'
+        }
+        
+        function tensao1(){
+            var corrente = Number(tcorrente.value)
+            var resistencia = Number(tresistencia.value)
+            var resultado = corrente * resistencia
+            res.innerHTML = 'Tensão elétrica = ' + resultado + 'V'
+        }
+
         function visivel_01(){
-            if (volt_sig.style.display == 'block'){
-                volt_sig.style.display = 'none'}
-            else{volt_sig.style.display = 'block'}
+            if (volt.style.display == 'block'){
+                volt.style.display = 'none'}
+            else{volt.style.display = 'block'}
         }
     </script>
 </body>
