@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Grandezas Elétricas</title>
+</head>
+<body>
+    <header>
+        <img src="../imagens/logo1.png" alt="Logo" id="logo">
+        <p>Grandezas Elétricas</p>
+    </header>
+    <span class="material-symbols-outlined" id="itens">
+        menu
+    </span>
+    <menu>
+        <ul>
+            <a href="../index.html">Home</a>
+        </ul>
+    </menu>
+    <main>
+        <section class="texto">
+            <h1 onclick="visivel_01()">Volt (V)</h1>
+            <p id="volt_sig"><strong class="produto">Tensão elétrica</strong>, também conhecida como diferença de potencial, é a diferença de potencial elétrico entre dois pontos ou a diferença em energia potencial elétrica por unidade de carga elétrica entre dois pontos. Sua unidade de medida é o <strong class="produto">volt</strong> homenagem ao físico italiano <strong class="pessoa">Alessandro Volta</strong></p>
+        </section>
+    </main>
+
+    <script>
+        function visivel_01(){
+            if (volt_sig.style.display == 'block'){
+                volt_sig.style.display = 'none'}
+            else{volt_sig.style.display = 'block'}
+        }
+    </script>
+</body>
+</html>
