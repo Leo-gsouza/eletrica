@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="../estilos/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Grandezas Elétricas</title>
@@ -12,10 +13,8 @@
         <img src="../imagens/logo1.png" alt="Logo" id="logo">
         <p>Grandezas Elétricas</p>
     </header>
-    <span class="material-symbols-outlined" id="itens">
-        menu
-    </span>
-    <menu>
+    <span class="material-symbols-outlined" id="menu" >menu</span>
+    <menu id="itens">
         <ul>
             <a href="../index.html">Home</a>
         </ul>
@@ -27,55 +26,53 @@
                 <p><strong class="produto">Tensão elétrica</strong>, também conhecida como diferença de potencial, é a diferença de potencial elétrico entre dois pontos. Sua unidade de medida é o <strong class="produto">VOLT</strong> homenagem ao físico italiano <strong class="pessoa">Alessandro Volta</strong>.<br>
                 Em termos simples, a tensão Elétrica de forma comparativa seria a força necessária para movimentar os elétrons e criar assim uma corrente elétrica. Pode ser gerada por várias fontes, como baterias, geradores ou células solares.</p><br>
                 <h2>Cálculos</h2>
-                <p>Abaixo temos 3 tipos de calculos para encontrar o valor da tensão elétrica com base em outras grandezas, que são: <strong class="produto"><br>Corrente(I) <br>Resistencia(R) <br>Potencia(P)</p></strong>
+                <p>Abaixo temos 3 tipos de calculos para encontrar o valor da tensão elétrica com base em outras grandezas</p>
+                <p>1º Corrente  x Resistencia </p>
+                <p>2º Potencia  / Corrente </p>
+                <p>3º Raiz da Potencia  x Resistencia </p>
 
                 <fieldset>
-                    <legend>I x R</legend>
+                    <legend>Informe apenas 2 Valores</legend>
+                    <label for="ipotencia">Potencia: </label>
+                    <input type="number" name="potencia" id="ipotencia"><br>
                     <label for="icorrente">Corrente: </label>
                     <input type="number" name="corrente" id="icorrente"><br>
                     <label for="iresistencia">Resistencia: </label>
                     <input type="number" name="resistencia" id="iresistencia"><br>
-                    <input type="button" value="calcular" id="calcular" onclick="tensao1()">
+                    <input type="button" value="calcular" id="calcular" onclick="tensao()">
                     <div id="res"></div>
                 </fieldset>
+            </section>
 
+        <section id="principal">
+            <h1 onclick="visivel_02()">Corrente (I)</h1>
+            <section class="caixa" id="corrente">
+                <p><strong class="produto">Tensão elétrica</strong>, também conhecida como diferença de potencial, é a diferença de potencial elétrico entre dois pontos. Sua unidade de medida é o <strong class="produto">VOLT</strong> homenagem ao físico italiano <strong class="pessoa">Alessandro Volta</strong>.<br>
+                Em termos simples, a tensão Elétrica de forma comparativa seria a força necessária para movimentar os elétrons e criar assim uma corrente elétrica. Pode ser gerada por várias fontes, como baterias, geradores ou células solares.</p><br>
+                <h2>Cálculos</h2>
+                <p>Abaixo temos 3 tipos de calculos para encontrar o valor da tensão elétrica com base em outras grandezas</p>
+                <p>1º Corrente  x Resistencia </p>
+                <p>2º Potencia  / Corrente </p>
+                <p>3º Raiz da Potencia  x Resistencia </p>
+
+                <fieldset>
+                    <legend>Informe apenas 2 Valores</legend>
+                    <label for="ipotencia">Potencia: </label>
+                    <input type="number" name="potencia" id="ipotencia"><br>
+                    <label for="icorrente">Corrente: </label>
+                    <input type="number" name="corrente" id="icorrente"><br>
+                    <label for="iresistencia">Resistencia: </label>
+                    <input type="number" name="resistencia" id="iresistencia"><br>
+                    <input type="button" value="calcular" id="calcular" onclick="tensao()">
+                    <div id="res"></div>
+                </fieldset>
             </section>
                 
             
         </section>
     </main>
-
-    <script>
-        var tcorrente = window.document.getElementById('icorrente')
-        var tresistencia = window.document.getElementById('iresistencia')
-        var res = window.document.getElementById('res')
-        var calcular = window.document.getElementById('calcular')
-
-        calcular.addEventListener('mouseenter' , entrou)
-        calcular.addEventListener('mouseout' , saiu)
-
-        function entrou(){
-            calcular.style.background = '#F5A302'
-            calcular.style.color = '#0C1E34'
-        }
-
-        function saiu(){
-            calcular.style.background = '#033C59'
-            calcular.style.color = 'white'
-        }
-        
-        function tensao1(){
-            var corrente = Number(tcorrente.value)
-            var resistencia = Number(tresistencia.value)
-            var resultado = corrente * resistencia
-            res.innerHTML = 'Tensão elétrica = ' + resultado + 'V'
-        }
-
-        function visivel_01(){
-            if (volt.style.display == 'block'){
-                volt.style.display = 'none'}
-            else{volt.style.display = 'block'}
-        }
-    </script>
+<script src="scripts/grandezas.js"></script>
+<script src="scripts/visivel.js"></script>
+    
 </body>
 </html>
