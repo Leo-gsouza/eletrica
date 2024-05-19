@@ -13,66 +13,61 @@
         <img src="../imagens/logo1.png" alt="Logo" id="logo">
         <p>Grandezas Elétricas</p>
     </header>
-    <span class="material-symbols-outlined" id="menu" >menu</span>
+    <span class="material-symbols-outlined" id="menu" onclick="menu()">menu</span>
     <menu id="itens">
         <ul>
             <a href="../index.html">Home</a>
+            <a href="../paginas/resistividade.html">Resistividade</a>
+
         </ul>
     </menu>
-    <main>
-        <section id="principal">
-            <h1 onclick="visivel_01()">Volt (V)</h1>
-            <section class="caixa" id="volt">
-                <p><strong class="produto">Tensão elétrica</strong>, também conhecida como diferença de potencial, é a diferença de potencial elétrico entre dois pontos. Sua unidade de medida é o <strong class="produto">VOLT</strong> homenagem ao físico italiano <strong class="pessoa">Alessandro Volta</strong>.<br>
-                Em termos simples, a tensão Elétrica de forma comparativa seria a força necessária para movimentar os elétrons e criar assim uma corrente elétrica. Pode ser gerada por várias fontes, como baterias, geradores ou células solares.</p><br>
-                <h2>Cálculos</h2>
-                <p>Abaixo temos 3 tipos de calculos para encontrar o valor da tensão elétrica com base em outras grandezas</p>
-                <p>1º Corrente  x Resistencia </p>
-                <p>2º Potencia  / Corrente </p>
-                <p>3º Raiz da Potencia  x Resistencia </p>
+    <main id="principal">
+        <h1 onclick="visivel_01()">Tensão = Volts (V)</h1>
+        <section class="caixa" id="volt">
+            <p><strong class="produto">Tensão elétrica</strong>, também conhecida como diferença de potencial, é a diferença de potencial elétrico entre dois pontos. Sua unidade de medida é o <strong class="produto">VOLT</strong> homenagem ao físico italiano <strong class="pessoa">Alessandro Volta</strong>.<br>Em termos simples, a tensão Elétrica de forma comparativa seria a força necessária para movimentar os elétrons e criar assim uma corrente elétrica.</p><br>
+            <h2>Cálculos</h2>
+            <p>Existem 3 calculos para encontrar o valor da tensão elétrica com base em outras grandezas</p>
+            <p class="calculos">1º Corrente  x Resistencia </p>
+            <p class="calculos">2º Potencia  / Corrente </p>
+            <p class="calculos">3º Raiz da Potencia  x Raiz da Resistencia </p>
 
-                <fieldset>
-                    <legend>Informe apenas 2 Valores</legend>
-                    <label for="ipotencia">Potencia: </label>
-                    <input type="number" name="potencia" id="ipotencia"><br>
-                    <label for="icorrente">Corrente: </label>
-                    <input type="number" name="corrente" id="icorrente"><br>
-                    <label for="iresistencia">Resistencia: </label>
-                    <input type="number" name="resistencia" id="iresistencia"><br>
-                    <input type="button" value="calcular" id="calcular" onclick="tensao()">
-                    <div id="res"></div>
-                </fieldset>
-            </section>
+            <fieldset><!-- TENSÃO -->
+                <legend>Informe apenas 2 Valores</legend>
+                <label for="potencia-v">Potencia: </label>
+                <input type="number" name="potencia" id="potencia-v"><br>
+                <label for="corrente-v">Corrente: </label>
+                <input type="number" name="corrente" id="corrente-v"><br>
+                <label for="resistencia-v">Resistencia: </label>
+                <input type="number" name="resistencia" id="resistencia-v"><br>
+                <input type="button" value="calcular" id="calcular"  onclick="tensao()">
+                <div id="res-v"></div>
+            </fieldset>
+        </section>
 
-        <section id="principal">
-            <h1 onclick="visivel_02()">Corrente (I)</h1>
-            <section class="caixa" id="corrente">
-                <p><strong class="produto">Tensão elétrica</strong>, também conhecida como diferença de potencial, é a diferença de potencial elétrico entre dois pontos. Sua unidade de medida é o <strong class="produto">VOLT</strong> homenagem ao físico italiano <strong class="pessoa">Alessandro Volta</strong>.<br>
-                Em termos simples, a tensão Elétrica de forma comparativa seria a força necessária para movimentar os elétrons e criar assim uma corrente elétrica. Pode ser gerada por várias fontes, como baterias, geradores ou células solares.</p><br>
-                <h2>Cálculos</h2>
-                <p>Abaixo temos 3 tipos de calculos para encontrar o valor da tensão elétrica com base em outras grandezas</p>
-                <p>1º Corrente  x Resistencia </p>
-                <p>2º Potencia  / Corrente </p>
-                <p>3º Raiz da Potencia  x Resistencia </p>
+        <h1 onclick="visivel_02()">Corrente = Amperes (I)</h1>
+        <section class="caixa" id="ampere">
+            <p>A <strong class="produto ">corrente elétrica</strong> é o fluxo ordenado de cargas elétricas, que se movem de forma orientada em um condutor elétrico.O nome "ampère" é em homenagem ao físico e matemático francês <strong class="pessoa">André-Marie Ampère (1775-1836)</strong>. Ampère é considerado um dos principais fundadores da ciência do eletromagnetismo.</p>
+            <h2>Cálculos</h2>
+            <p>Abaixo temos 3 tipos de calculos para encontrar o valor da tensão elétrica com base em outras grandezas</p>
+            <p class="calculos">1º Tensão  x Resistencia </p>
+            <p class="calculos">2º Potencia  / Tensão </p>
+            <p class="calculos">3º Raiz da Potencia x Resistencia </p>
 
-                <fieldset>
-                    <legend>Informe apenas 2 Valores</legend>
-                    <label for="ipotencia">Potencia: </label>
-                    <input type="number" name="potencia" id="ipotencia"><br>
-                    <label for="icorrente">Corrente: </label>
-                    <input type="number" name="corrente" id="icorrente"><br>
-                    <label for="iresistencia">Resistencia: </label>
-                    <input type="number" name="resistencia" id="iresistencia"><br>
-                    <input type="button" value="calcular" id="calcular" onclick="tensao()">
-                    <div id="res"></div>
-                </fieldset>
-            </section>
-                
-            
+            <fieldset><!-- CORRENTE -->
+                <legend>Informe apenas 2 Valores</legend>
+                <label for="tensao-i">Tensão: </label>
+                <input type="number" name="tensao" id="tensao-i"><br>
+                <label for="resistencia-i">Resistencia: </label>
+                <input type="number" name="resistencia" id="resistencia-i"><br>
+                <label for="potencia-i">Potencia: </label>
+                <input type="number" name="potencia" id="potencia-i"><br>
+                <input type="button" value="calcular" id="calcular-i" onclick="corrente()">
+                <div id="res-i"></div>
+            </fieldset>
         </section>
     </main>
-<script src="scripts/grandezas.js"></script>
-<script src="scripts/visivel.js"></script>
-    
+    <script src="scripts/grandezas.js"></script>
+    <script src="scripts/visivel.js"></script>
+        
 </body>
 </html>

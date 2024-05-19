@@ -5,7 +5,13 @@ function visivel_01(){
 }
 
 function visivel_02(){
-    if (corrente.style.display == 'block'){
-        corrente.style.display = 'none'}
-    else{corrente.style.display = 'block'}
+    if (ampere.style.display == 'block'){
+        ampere.style.display = 'none'}
+    else{ampere.style.display = 'block'}
+}
+
+function menu(){
+    if (itens.style.display == 'block'){
+        itens.style.display = 'none'
+    }else{ itens.style.display = 'block'}
 }

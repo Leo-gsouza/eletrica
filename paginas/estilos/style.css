@@ -53,8 +53,9 @@ span#menu{
 }
 
 menu{
+    display: none;
     text-align: center;
-    background-color: lightgoldenrodyellow;
+    background-color: white;
 }
 
 menu > ul > a{
@@ -71,45 +72,51 @@ menu > ul > a{
 }
 
 /* ==============================        Pagina Gradezas      =============================== */
+body{
+    background: url('../../imagens/fundo-eletrica2.jpg') left top no-repeat fixed;
+    background-size: cover;
+}
 
-section#principal {
+
+main#principal {
     margin: auto;
-    width: 100vw;
-    height: 100vh;
-
-    background-color: white;
-
-    margin-top: 35px;
+    padding-top: 30px;
+    background-color: rgba(255, 255, 255, 0);
 
 }
 
-section#principal > h1{
+main#principal > h1{
     display: block;
     margin: auto;
-    margin-bottom: -20px;
+    margin-top: 10px;
     width: 270px;
 
     text-align: center;
     text-transform: uppercase;
+    font-size: 1.1em;
 
-    color: var(--cor1);
-    background-color: var(--cor5);
-    border: 5px solid var(--cor1);
+    color: var(--cor6);
+    background-color: lightgoldenrodyellow;
+    border: 4px solid var(--cor1);
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px black;
 
-    padding: 16px;
+    padding: 10px;
 
 }
 
-section#principal > section.caixa{
+main#principal > section.caixa{
     display: none;
     width: 260px;
     margin: auto;
+    margin-top: -5px;
     padding: 25px 10px ;
 
     text-align: justify;
     font-family: var(--font-paragrafo);
 
-    border: 3px dotted var(--cor5);
+    border: 3px solid var(--cor1);
+    background-color: white;
     border-radius: 5px;
 }
 
@@ -126,6 +133,16 @@ section.caixa > h2{
 
 .pessoa{
     color: var(--cor4);
+}
+
+.calculos{
+    text-align: left;
+    text-transform: uppercase;
+    text-indent: 5px;
+    color: var(--cor4);
+    font-style: italic;
+    padding: 3px;
+    font-size: 0.8em;
 }
 
 fieldset{
@@ -191,10 +208,13 @@ input[type='button']{
     color: white;
 }
 
-div#res {
+#res-v, #res-i, #res-w, #res-r {
+    display: block;
+    margin: auto;
+    width: 210px;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bolder;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 15px;
 }
