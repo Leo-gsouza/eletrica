@@ -1,8 +1,10 @@
-function visivel(grandeza, fechar1){
+function visivel(grandeza, fechar1, fechar2){
     if (grandeza.style.display == 'block'){
         grandeza.style.display = 'none'}
     else{grandeza.style.display = 'block'
         fechar1.style.display ='none'
+        fechar2.style.display ='none'
+       
     }
 }
 

@@ -20,15 +20,17 @@ header > img#logo{
 span#menu{
     position: absolute;
     top: 20px;
-    left: 4%;
+    left: 1%;
 
-    font-size: 3em;
+    font-size: 2.8em;
     text-align: center;
 
     color: var(--cor6);
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
     box-shadow: 0px 0px 15px var(--cor6);
     text-shadow: 0px 0px 15px yellow;
+
+    border-radius: 5px;
 }
 /* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬            Menu           ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
 
@@ -70,25 +72,22 @@ main#principal > h1#titulo{
 }
 
 main#principal > div#botoes{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: space-between;
+    display: flex;/* container flexivel */
+    flex-direction: row;/* Define o eixo principal como horizontal da esquerda para direita */
+    flex-wrap: nowrap;/* Itens fiquem na mesma linha */
+    justify-content: space-evenly;/* Distribui os itens uniformemente com espaços iguais entre eles. */
+    align-items: stretch;/* Estica os itens para preencher o contêiner (este é o valor padrão) */
 }
 
 main#principal > div > p.button{
-    width: 72px;
-
+    width: 80px;
     text-align: center;
     text-transform: uppercase;
     font-size: 0.95em;
 
     color: var(--cor6);
     background-color: lightgoldenrodyellow;
-    border: 4px solid var(--cor4);
-    border-radius: 12px;
+    border: 1px solid var(--cor2);
 
     padding: 5px 2px;
 
@@ -96,10 +95,10 @@ main#principal > div > p.button{
 
 main#principal > section.caixa{
     display: none;
-    width: 290px;
+    width: 300px;
     margin: auto;
-    margin-top: -15px;
-    padding: 25px 10px ;
+    margin-top: -30px;
+    padding: 45px 15px 30px 15px;
 
     text-align: justify;
     font-family: var(--font-paragrafo);
@@ -197,13 +196,14 @@ input[type='button']{
     color: white;
 }
 
-#res-v, #res-i, #res-w, #res-r {
+div.resultado {
     display: block;
     margin: auto;
     width: 210px;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: bolder;
+    font-family: monospace;
     text-transform: uppercase;
     margin-top: 15px;
 }

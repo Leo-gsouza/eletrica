@@ -23,10 +23,10 @@
     <main id="principal">
         <h1 id="titulo">Grandezas Elétricas</h1> 
         <div id="botoes">
-            <p onclick="visivel(volt, ampere)" class="button">Volt</p>
-            <p onclick="visivel(ampere, volt)" class="button">Ampere</p>
-            <p onclick="visivel(ohm)" class="button">Ohm</p>
-            <p onclick="visivel(watt)" class="button">Watt</p>
+            <p onclick="visivel(volt, ampere, ohm)" class="button">Volt</p>
+            <p onclick="visivel(ampere, volt, ohm)" class="button">Ampere</p>
+            <p onclick="visivel(ohm, volt, ampere)" class="button">Ohm</p>
+            <p  class="button">Watt</p>
         </div>
 
         <section class="caixa" id="volt">
@@ -65,14 +65,14 @@
 
             <fieldset><!-- TENSÃO -->
                 <legend>Informe apenas 2 Valores</legend>
-                <label for="potencia-v">Potencia: </label>
-                <input type="number" name="potencia" id="potencia-v"><br>
-                <label for="corrente-v">Corrente: </label>
-                <input type="number" name="corrente" id="corrente-v"><br>
-                <label for="resistencia-v">Resistencia: </label>
-                <input type="number" name="resistencia" id="resistencia-v"><br>
-                <input type="button" value="calcular" id="calcular"  onclick="tensao()">
-                <div id="res-v"></div>
+                <label for="vPotencia">Potencia: </label>
+                <input type="number" name="potencia" id="vPotencia"><br>
+                <label for="vCorrente">Corrente: </label>
+                <input type="number" name="corrente" id="vCorrente"><br>
+                <label for="vResistencia">Resistencia: </label>
+                <input type="number" name="resistencia" id="vResistencia"><br>
+                <input type="button" value="Calcular" id="vCalcular"  onclick="tensao(vPotencia, vCorrente, vResistencia, vRes, vCalcular)">
+                <div id="vRes" class="resultado"></div>
             </fieldset>
         </section>
 
@@ -113,14 +113,14 @@
 
             <fieldset><!-- CORRENTE -->
                 <legend>Informe apenas 2 Valores</legend>
-                <label for="tensao-i">Tensão: </label>
-                <input type="number" name="tensao" id="tensao-i"><br>
-                <label for="resistencia-i">Resistencia: </label>
-                <input type="number" name="resistencia" id="resistencia-i"><br>
-                <label for="potencia-i">Potencia: </label>
-                <input type="number" name="potencia" id="potencia-i"><br>
-                <input type="button" value="calcular" id="calcular-i" onclick="corrente()">
-                <div id="res-i"></div>
+                <label for="iTensao">Tensão: </label>
+                <input type="number" name="tensao" id="iTensao"><br>
+                <label for="iResistencia">Resistencia: </label>
+                <input type="number" name="resistencia" id="iResistencia"><br>
+                <label for="iPotencia">Potencia: </label>
+                <input type="number" name="potencia" id="iPotencia"><br>
+                <input type="button" value="Calcular" id="iCalcular" onclick="corrente(iPotencia, iTensao, iResistencia, iRes, iCalcular)">
+                <div id="iRes" class="resultado"></div>
             </fieldset>
         </section>
 
@@ -156,26 +156,27 @@
             <p>Aquecedores Elétricos: Dispositivos que usam resistência alta para converter energia elétrica em calor.</p>
             <p>A resistência elétrica é uma das principais propriedades que definem como a corrente elétrica se comporta em diferentes materiais e é fundamental para o funcionamento de muitos dispositivos e sistemas elétricos.</p>
             <h2>Calculos</h2>
-            <p>O valor da corrente elétrica pode ser calculado usando os valores de outras grandezas.</p>
-            <p class="calculos">1º Tensão  x Resistencia </p>
-            <p class="calculos">2º Potencia  / Tensão </p>
-            <p class="calculos">3º Raiz da Potencia x Resistencia </p>
+            <p>O valor da resistencia elétrica pode ser calculado usando os valores de outras grandezas.</p>
+            <p class="calculos">1º Tensão  / Corrente </p>
+            <p class="calculos">2º Tensão<sup>2</sup>  / Potencia </p>
+            <p class="calculos">3º Potencia / Corrente<sup>2</sup> </p>
 
             <fieldset><!-- RESISTENCIA -->
                 <legend>Informe apenas 2 Valores</legend>
-                <label for="tensao-i">Tensão: </label>
-                <input type="number" name="tensao" id="tensao-i"><br>
-                <label for="resistencia-i">Resistencia: </label>
-                <input type="number" name="resistencia" id="resistencia-i"><br>
-                <label for="potencia-i">Potencia: </label>
-                <input type="number" name="potencia" id="potencia-i"><br>
-                <input type="button" value="calcular" id="calcular-i" onclick="corrente()">
-                <div id="res-i"></div>
+                <label for="oTensao">Tensão: </label>
+                <input type="number" name="tensao" id="oTensao"><br>
+                <label for="oCorrente">Corrente: </label>
+                <input type="number" name="corrente" id="oCorrente"><br>
+                <label for="oPotencia">Potencia: </label>
+                <input type="number" name="potencia" id="oPotencia"><br>
+                <input type="button" value="calcular" id="oCalcular" onclick="resistencia(oPotencia, oTensao, oCorrente, oRes, oCalcular)">
+                <div id="oRes" class="resultado"></div>
             </fieldset>
+        </section>
 
             
     </main>
-    <script src="scripts/grandezas.js"></script>
+    <script src="scripts/grandezascopy.js"></script>
     <script src="scripts/visivel.js"></script>
         
 </body>
