@@ -1,17 +1,13 @@
-function visivel_01(){
-    if (volt.style.display == 'block'){
-        volt.style.display = 'none'}
-    else{volt.style.display = 'block'}
-}
-
-function visivel_02(){
-    if (ampere.style.display == 'block'){
-        ampere.style.display = 'none'}
-    else{ampere.style.display = 'block'}
+function visivel(grandeza, fechar1){
+    if (grandeza.style.display == 'block'){
+        grandeza.style.display = 'none'}
+    else{grandeza.style.display = 'block'
+        fechar1.style.display ='none'
+    }
 }
 
 function menu(){
     if (itens.style.display == 'block'){
         itens.style.display = 'none'
-    }else{ itens.style.display = 'block'}
+    }else{itens.style.display = 'block'}
 }

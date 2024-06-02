@@ -19,6 +19,9 @@ var iRes = window.document.getElementById('res-i')
 var wRes = window.document.getElementById('res-w')
 var rRes = window.document.getElementById('res-r')
 
+var caixaCorrente = document.getElementById('ampere')
+var caixaTensao = document.getElementById('volt')
+
 
 var calcular = window.document.querySelector('input#calcular')
 
@@ -42,6 +45,7 @@ function tensao(){
     let resistencia = Number(vResistenciaTx.value)
     let potencia = Number(vPotenciaTx.value)
 
+
     if (corrente != '' && potencia != '' && resistencia != ''){
         window.alert('Insira apenas duas grandezas')
     }else{
@@ -60,6 +64,7 @@ function corrente(){
     let tensao = Number(iTensaoTx.value)
     let resistencia = Number(iResistenciaTx.value)
     let potencia = Number(iPotenciaTx.value)
+
 
     if ( tensao != '' && resistencia != '' && potencia != ''){
         window.alert('Você inseriu três grandezas! Insira apenas duas')
