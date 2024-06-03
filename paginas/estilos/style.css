@@ -36,21 +36,38 @@ span#menu{
 
 menu{
     display: none;
-    text-align: center;
+}
+
+menu > div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
     background-color: white;
 }
 
-menu > ul > a{
+menu > div > p > a{
+    width: 102px;
     display: block;
+    text-align: center;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 0.8em;
     text-transform: uppercase;
     font-weight: bolder;
     
     color: var(--cor5);
     border: 1px solid var(--cor4);
+    box-shadow: inset 0px 0px 8px var(--cor5);
     
-    padding: 5px;
+    padding: 8px;
+}
+
+menu > div > p > a:hover{
+    background-color: var(--cor1);
+    color: var(--cor5);
+    box-shadow: 0px 0px 15px white;
 }
 
 /* ==============================        Pagina Gradezas      =============================== */
@@ -80,7 +97,7 @@ main#principal > div#botoes{
 }
 
 main#principal > div > p.button{
-    width: 80px;
+    width: 69px;
     text-align: center;
     text-transform: uppercase;
     font-size: 0.95em;
@@ -88,6 +105,7 @@ main#principal > div > p.button{
     color: var(--cor6);
     background-color: lightgoldenrodyellow;
     border: 1px solid var(--cor2);
+    box-shadow: 0px 0px 8px var(--cor6);
 
     padding: 5px 2px;
 
@@ -115,7 +133,7 @@ section.caixa > h2{
     padding: 7px;
 }
 
-.produto{
+strong{
     color: darkred;
 }
 
