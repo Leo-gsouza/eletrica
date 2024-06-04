@@ -133,6 +133,11 @@ section.caixa > h2{
     padding: 7px;
 }
 
+section.caixa > p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 21px;
+}
+
 strong{
     color: darkred;
 }
@@ -224,4 +229,50 @@ div.resultado {
     font-family: monospace;
     text-transform: uppercase;
     margin-top: 15px;
+}
+
+/* ============================================ RESISTIVIDADE ====================================== */
+
+section.caixa > img{
+    display: block;
+    margin: auto;
+    width: 150px;
+    transition: 1s ease;
+}
+section.caixa > img:hover{
+    transform: scale(1.6);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.295)
+}
+
+
+label#material{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: -25px;
+}
+
+fieldset > select{
+    display: block;
+    margin: auto;
+    width: 240px;
+    padding: 7px;
+    margin-top: 3px;
+    font-size: 1.1em;
+    text-align: center;
+    border: 2px solid var(--cor4);
+
+}
+
+input#comprimento{
+    width: 93px;
+    position: absolute;
+    left: 165px;
+}
+
+input#area{
+    width: 93px;
+    position: absolute;
+    left: 165px;
 }
