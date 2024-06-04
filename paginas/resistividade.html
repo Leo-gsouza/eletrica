@@ -16,10 +16,10 @@
     <menu id="itens">
         <div>
             <p><a href="../index.html">Home</a></p>
-            <p><a href="../paginas/resistividade.html">Resistividade</a></p>
-            <p><a href="../paginas/resistividade.html">Secção</a></p>
-            <p><a href="../paginas/resistividade.html">Secção</a></p>
-            <p><a href="../paginas/resistividade.html">Secção</a></p>
+            <p><a href="../paginas/grandezas-eletricas.html">Grandezas</a></p>
+            <p><a href="#">vazio</a></p>
+            <p><a href="#">vazio</a></p>
+            <p><a href="#">vazio</a></p>
         </div>
     </menu>
     <main id="principal">
@@ -29,15 +29,16 @@
             <h2>O que é Resistividade Elétrica?</h2>
             <p>A resistividade (ou resistividade elétrica) é uma propriedade intrínseca dos materiais que quantifica a <strong>oposição que um material apresenta à passagem de uma corrente elétrica</strong>. É uma medida de quanto um material resiste ao fluxo de corrente elétrica. A resistividade é denotada pela letra grega ρ (rho) e é expressa em ohm-metros (Ω⋅𝑚).</p>
             
-            <p><br>A resistividade pode ser definida pela relação: 𝜌= 𝑅 x (𝐴/𝐿), onde:</p><br>
-            <p><strong>R</strong> é a resistência elétrica do material (em ohms, Ω)</p>
+            <p><br>A resistividade pode ser definida pela relação:  𝑅 = 𝜌 x (𝐴/𝐿), onde:</p><br>
+            <p><strong>R</strong> é a resistência do fio</p>
+            <p><strong>𝜌</strong> é a resistividade do material (ohm x metros)</p>
             <p><strong>A</strong> é a área da seção transversal do material (em metros quadrados, 𝑚<sup>2</sup>)</p>
             <p><strong>L</strong> é o comprimento do material (em metros, 𝑚).</p><br>
             <img src="../imagens/resistividade.jpg" alt="resistividade">
             
             <p>Principais fatores que influenciam a resistividade:</p>
             <p><strong>Tipo de Material:</strong> Diferentes materiais têm diferentes resistividades. Por exemplo, metais como cobre e prata têm baixa resistividade, enquanto materiais como borracha e vidro têm alta resistividade.</p>
-            <p><strong>Temperatura: A</strong> resistividade de um material geralmente aumenta com o aumento da temperatura. Para condutores metálicos, a resistividade aumenta linearmente com a temperatura. Para semicondutores, a relação pode ser mais complexa.</p>
+            <p><strong>Temperatura:</strong> A resistividade de um material geralmente aumenta com o aumento da temperatura. Para condutores metálicos, a resistividade aumenta linearmente com a temperatura. Para semicondutores, a relação pode ser mais complexa.</p>
             <p><strong>Pureza do Material:</strong> Impurezas no material podem aumentar sua resistividade.</p>
             <p><strong>Estrutura Cristalina:</strong> Defeitos e a estrutura cristalina do material podem influenciar a resistividade.</p>
             <p>Resistividades típicas de alguns materiais a 20°C:</p>
@@ -48,7 +49,7 @@
             <p>Semicondutores: A resistividade de materiais semicondutores como silício e germânio é fundamental para o funcionamento de dispositivos como transistores e diodos.</p>
             <p>Compreender a resistividade dos materiais ajuda no design e na fabricação de uma ampla gama de dispositivos e sistemas elétricos e eletrônicos, garantindo eficiência e funcionalidade adequadas.</p>
             <h2>Calcular</h2>
-            <p>para realizar o calculo de resistividade de um material abaixo será necessário informar o tipo do material, sua area em m<sup>2</sup> e por fim o seu comprimento em metros</p>
+            <p>para realizar o calculo de resistividade de um material abaixo será necessário informar o tipo do material, sua area em mm<sup>2</sup> e por fim o seu comprimento em metros</p>
 
             <fieldset><!-- RESISTIVIDADE -->
                 <legend>𝜌= 𝑅 x (𝐴/𝐿)</legend>
@@ -56,12 +57,13 @@
                 <select name="selecao" id="opcao">
                     <option value="ouro">ouro</option>
                     <option value="aluminio">aluminio</option>
+                    <option value="cobre">cobre</option>
                 </select><br>
-                <label for="area">Area m<sup>2</sup>: </label>
+                <label for="area">Area mm<sup>2</sup>: </label>
                 <input type="number" name="area" id="area"><br>
                 <label for="comprimento">Comprimento:</label>
                 <input type="number" name="comprimento" id="comprimento"><br>
-                <input type="button" value="Buscar" onclick="buscar(opcao, res, area, comprimento)">
+                <input type="button" value="Buscar" onclick="buscar(opcao, area, comprimento , res, this)">
 
                 
                 <div id="res" class="resultado"></div>

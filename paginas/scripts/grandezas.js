@@ -17,11 +17,11 @@ function tensao(w, a, o, resultado, calc){
     }else if (corrente <= 0 && potencia <= 0 && resistencia <= 0){
         alert('Você inseriu três grandezas. Insira apenas duas ')
     }else if (corrente > 0 && resistencia > 0){
-            res.innerHTML = `Tensão = ${(corrente*resistencia).toFixed(0)}V `
+            res.innerHTML = `${(corrente*resistencia).toFixed(0)}V `
     }else if (potencia != '' && corrente != ''){
-                res.innerHTML = `Tensão = ${(potencia/corrente).toFixed(0)}V `
+                res.innerHTML = `${(potencia/corrente).toFixed(0)}V `
     }else{
-            res.innerHTML = `Tensão = ${(potencia**0.5*resistencia**0.5).toFixed(0)}V `
+            res.innerHTML = `${(potencia**0.5*resistencia**0.5).toFixed(0)}V `
     }
 }
 
@@ -50,11 +50,11 @@ function corrente(w , v, o, resultado, calc){
         window.alert('Você inseriu apenas a potencia elétrica')
     }else{
         if (tensao > 0 && resistencia > 0){
-            res.innerHTML = `Corrente = ${(tensao/resistencia).toFixed(0)} A`
+            res.innerHTML = `${(tensao/resistencia).toFixed(0)}A`
         }else if (tensao > 0 && potencia > 0){
-            res.innerHTML = `Corrente = ${(potencia/tensao).toFixed(0)} A`
+            res.innerHTML = `${(potencia/tensao).toFixed(0)}A`
         }else if( potencia > 0 && resistencia > 0){
-            res.innerHTML = `Corrente = ${(potencia**0.5/resistencia**0.5).toFixed(0)} A`
+            res.innerHTML = `${(potencia**0.5/resistencia**0.5).toFixed(0)}A`
         }
     }
 
@@ -85,11 +85,11 @@ function resistencia(w, v, a, resultado, calc){
         alert('Você iseriu apenas o valor da potencia')
 
     }else if (tensao > 0 && corrente > 0){
-        res.innerHTML = `Resistencia = ${(tensao/corrente).toFixed(0)} Ω `
+        res.innerHTML = `${(tensao/corrente).toFixed(0)}Ω `
     }else if( tensao > 0 && potencia > 0 ){
-        res.innerHTML = `Resistencia = ${(tensao**2/potencia).toFixed(0)} Ω`
+        res.innerHTML = `${(tensao**2/potencia).toFixed(0)}Ω`
     }else if (corrente > 0 && potencia > 0){
-        res.innerHTML = `Resistencia = ${(potencia/corrente**2).toFixed(0)} Ω`
+        res.innerHTML = `${(potencia/corrente**2).toFixed(0)}Ω`
     }
 
 
@@ -120,11 +120,11 @@ function potencia(v, a, o, resultado, calc){
         alert('Você iseriu apenas o valor da resistencia')
 
     }else if (tensao > 0 && corrente > 0){
-        res.innerHTML = `Potencia = ${(tensao*corrente).toFixed(0)} W `
+        res.innerHTML = `${(tensao*corrente).toFixed(0)}W `
     }else if( tensao > 0 && resistencia > 0 ){
-        res.innerHTML = `Potencia = ${((tensao**2)/resistencia).toFixed(0)} W`
+        res.innerHTML = `${((tensao**2)/resistencia).toFixed(0)}W`
     }else if (corrente > 0 && resistencia > 0){
-        res.innerHTML = `Potencia = ${(resistencia*(corrente**2)).toFixed(0)} W`
+        res.innerHTML = `${(resistencia*(corrente**2)).toFixed(0)}W`
     }
 
 
