@@ -25,53 +25,86 @@
     </menu>
     <main id="principal">
         <h1 id="titulo">Geradores de Energia</h1> 
+        <p id="resumo">Os geradores de energia são dispositivos ou sistemas que produzem energia elétrica a partir de diferentes fontes. Cada tipo de gerador tem uma origem específica, um princípio de funcionamento distinto e um impacto ambiental particular. Vamos explorar alguns dos principais geradores de energia:</p>
+        <div id="botoes" class="quebraLinha">
+            <p class="button" onclick="visivel(hid, ter)">Hidrelétrica</p>
+            <p class="button" onclick="visivel(ter, hid)">Termoelétrica</p>
+            <p class="button" onclick="visivel(ter)">Nuclear</p>
+            <p class="button" onclick="visivel(ter)">Eólica</p>
+            <p class="button" onclick="visivel(ter)">Solar</p>
+            <p class="button" onclick="visivel(ter)">Geotérmica</p>
+            <p class="button" onclick="visivel(ter)">Biomassa</p>
+        </div>
 
-        <p class="geradores" onclick="visivel(hid)">Hidrelétrica</p>
         <section class="caixa" id="hid">
-            <h2>O que é Tensão Elétrica?</h2>
-            <p>Tensão elétrica, também conhecida como diferença de potencial elétrico ou voltagem, é a força que impulsiona os elétrons a se moverem através de um condutor. É medida em volts (V) e representa a quantidade de energia potencial elétrica por unidade de carga. A tensão é o que "empurra" a corrente elétrica em um circuito.</p>
+            <h2 style="text-transform: uppercase;">Hidrelétrica</h2>
+            <img src="../imagens/hidreletrica.jpg" alt="hidreletrica">
+            <h2>Origem e Descoberta</h2>
+            <p>A energia hidrelétrica tem suas raízes na antiguidade, quando as civilizações utilizavam a força da água para mover moinhos e outros dispositivos mecânicos. A utilização da água em rodas hidráulicas remonta a civilizações antigas como a grega e a romana.</p>
 
-            <h2>Origem da Descoberta</h2>
-            <p>A compreensão da tensão elétrica desenvolveu-se ao longo do século XVIII e XIX. Alguns marcos importantes incluem:</p>
-
-            <p><strong class="pessoa">Benjamin Franklin (1706-1790)</strong>: Desenvolveu a noção de carga elétrica e conduziu experimentos com eletricidade estática, contribuindo para a compreensão inicial de como cargas elétricas interagem.</p>
-            <p><strong class="pessoa">Alessandro Volta (1745-1827)</strong>: Em 1800, Volta inventou a pilha voltaica, a primeira fonte de tensão contínua. A sua invenção demonstrou que a tensão elétrica poderia ser gerada quimicamente.</p>
-            <p><strong class="pessoa">Georg Simon Ohm (1789-1854)</strong>: Formulou a Lei de Ohm, que relaciona a tensão (V), a corrente (I) e a resistência (R) em um circuito elétrico.</p>
-
-            <h2>Origem do Nome</h2>
-            <p>O termo "tensão" deriva do latim "tensio", que significa "alongamento" ou "pressão". A unidade de medida da tensão elétrica, o volt, foi nomeada em homenagem a Alessandro Volta, reconhecendo suas contribuições significativas para a eletricidade.</p>
+            <p>A descoberta da eletricidade no século XIX abriu caminho para a utilização da energia hídrica na geração de eletricidade. Em 1882, a primeira usina hidrelétrica comercial do mundo, a Vulcan Street Plant, começou a operar em Appleton, Wisconsin, nos Estados Unidos. Este marco foi crucial para o desenvolvimento das usinas hidrelétricas modernas.</p>
             
+            <h2>Funcionamento dos Geradores Hidrelétricos</h2>
+            <p>Os geradores hidrelétricos funcionam convertendo a energia cinética da água em energia elétrica. O processo pode ser descrito em várias etapas:</p>
 
-            <h2>Explicação Detalhada</h2>
-            <p>Tensão elétrica é a diferença de potencial elétrico entre dois pontos em um circuito. Essa diferença cria um campo elétrico que força os elétrons a se moverem, gerando corrente elétrica. A tensão pode ser gerada por várias fontes, como baterias, geradores ou fontes de alimentação.</p>
+            <p><strong>Reservatório de Água:</strong> A água é armazenada em um reservatório ou represa.</p>
+            <p><strong>Entrada da Água:</strong> A água é liberada do reservatório através de comportas, movendo-se por um canal ou túnel em direção às turbinas.</p>
+            <p><strong>Turbinas:</strong> A água em movimento gira as turbinas, que estão conectadas a geradores. A energia cinética da água é transformada em energia mecânica.</p>
+            <p><strong>Geradores:</strong> As turbinas estão acopladas a geradores. Quando as turbinas giram, elas movem os rotores dos geradores, que transformam a energia mecânica em energia elétrica por meio de indução eletromagnética.</p>
+            <p><strong>Transformadores:</strong> A energia elétrica gerada é então passada por transformadores para ajustar a voltagem e ser transmitida pela rede elétrica.</p>
 
-            <h2>Aqui está como isso funciona:</h2>
+            <h2>Quantidade de Geradores Hidrelétricos no Mundo</h2>
+            <p>A energia hidrelétrica é uma das principais fontes de energia renovável no mundo. A quantidade de usinas hidrelétricas varia de acordo com o país e a capacidade de aproveitamento dos recursos hídricos disponíveis. Aqui estão alguns dados relevantes:</p>
 
-            <p>Fonte de Tensão: Dispositivos como baterias ou geradores criam uma diferença de potencial elétrico entre seus terminais.</p>
-            <p>
-            <p>Campo Elétrico: Esta diferença de potencial estabelece um campo elétrico dentro do condutor.</p>
-            <p>Energia Potencial: Os elétrons na extremidade negativa têm mais energia potencial em comparação com os elétrons na extremidade positiva.</p>
-            </p>
-            <p>Movimento dos Elétrons: Devido à diferença de potencial, os elétrons são "empurrados" do terminal negativo para o terminal positivo, criando um fluxo de corrente.</p>
-            <h2>Importância da Tensão Elétrica</h2>
-            <p>Tensão elétrica é fundamental para a operação de circuitos elétricos e dispositivos eletrônicos. Ela determina a quantidade de energia disponível para mover os elétrons e, portanto, influencia a eficiência e o desempenho de sistemas elétricos. Desde a alimentação de pequenos dispositivos eletrônicos até a transmissão de energia elétrica em larga escala, a tensão elétrica é crucial em todos os aspectos da tecnologia moderna.</p>
-            <h2>Cálculos</h2>
-            <p>O valor da tensão elétrica pode ser calculado usando os valores de outras grandezas.</p>
-            <p class="calculos">1º Corrente x Resistencia </p>
-            <p class="calculos">2º Potencia  / Corrente </p>
-            <p class="calculos">3º Raiz da Potencia  x Raiz da Resistencia </p>
+            <p><strong>China:</strong> É o maior produtor de energia hidrelétrica do mundo, com usinas como a Barragem das Três Gargantas, que é a maior usina hidrelétrica do mundo em termos de capacidade instalada (22,5 GW).</p>
+            <p><strong>Brasil:</strong> O Brasil possui grandes usinas hidrelétricas, como Itaipu, que é uma das maiores do mundo com uma capacidade instalada de 14 GW.</p>
+            <p><strong>Estados Unidos:</strong> A energia hidrelétrica também é significativa nos Estados Unidos, com a Hoover Dam e a Grand Coulee Dam sendo exemplos notáveis.</p>
+            <p><strong>Canadá:</strong> O Canadá é um dos maiores produtores de energia hidrelétrica, com uma rede extensa de usinas espalhadas pelo país.</p>
+            <p><strong>Outros Países:</strong> Outros países com grandes capacidades hidrelétricas incluem a Rússia, a Índia, a Noruega e a Suécia.</p>
+            <p>Segundo a Agência Internacional de Energia (IEA), a capacidade mundial de geração de energia hidrelétrica em 2020 era de aproximadamente <strong>1.300 gigawatts (GW)</strong>. Este número representa cerca de 16% da capacidade total de geração de eletricidade no mundo e cerca de 60% da capacidade global de geração de eletricidade renovável.</p>
 
-            <fieldset><!-- TENSÃO -->
-                <legend>Informe apenas 2 Valores</legend>
-                <label for="vPotencia">Potencia: </label>
-                <input type="number" name="potencia" id="vPotencia"><br>
-                <label for="vCorrente">Corrente: </label>
-                <input type="number" name="corrente" id="vCorrente"><br>
-                <label for="vResistencia">Resistencia: </label>
-                <input type="number" name="resistencia" id="vResistencia"><br>
-                <input type="button" value="Calcular" id="vCalcular"  onclick="tensao(vPotencia, vCorrente, vResistencia, vRes, vCalcular)">
-                <div id="vRes" class="resultado"></div>
-            </fieldset>
+            <h2>Importância e Futuro da Energia Hidrelétrica</h2>
+            <p>A energia hidrelétrica é crucial para a matriz energética global devido à sua capacidade de fornecer grandes quantidades de energia limpa e renovável. Além disso, usinas hidrelétricas têm a capacidade de responder rapidamente às variações na demanda de energia, oferecendo uma fonte de energia confiável e estável.</p>
+
+            <p>No futuro, o desenvolvimento de tecnologias de micro e pequenas hidrelétricas pode expandir ainda mais o uso da energia hidrelétrica, especialmente em regiões remotas. Além disso, a modernização e a otimização das usinas existentes podem aumentar a eficiência e a capacidade de geração.</p>
+
+            <p>Em resumo, os geradores hidrelétricos desempenham um papel vital na produção de energia sustentável e continuarão a ser uma peça fundamental na transição para uma matriz energética global mais limpa e eficiente.</p>
+        </section>
+
+        <section class="caixa" id="ter">
+            <h2 style="text-transform: uppercase;">Termoeletrica</h2>
+            <img src="../imagens/termoeletrico.jpg" alt="termoeletrico">
+            <h2>Origem e Descoberta</h2>
+            <p>Os geradores termoelétricos têm uma origem que remonta ao século XIX, com a descoberta do efeito termoelétrico por Thomas Johann Seebeck em 1821. Seebeck descobriu que uma corrente elétrica pode ser gerada a partir da diferença de temperatura entre dois metais diferentes conectados em um circuito fechado. Este fenômeno é conhecido como efeito Seebeck, que é a base do funcionamento dos geradores termoelétricos.</p>
+
+            <p>A utilização prática dos geradores termoelétricos começou a ser explorada no século XX, especialmente durante a Segunda Guerra Mundial e na era espacial, onde a confiabilidade e a ausência de partes móveis tornavam essas tecnologias particularmente úteis.</p>
+
+            <h2>Funcionamento dos Geradores Termoelétricos</h2>
+            <p>Os geradores termoelétricos convertem diretamente o calor em eletricidade usando o efeito Seebeck. O funcionamento pode ser descrito da seguinte maneira:</p>
+
+            <p><strong>Fonte de Calor:</strong> A energia térmica é fornecida por uma fonte de calor. Esta pode ser uma chama, um reator nuclear, ou qualquer outra fonte de calor.</p>
+            <p><strong>Materiais Termoelétricos:</strong> Materiais com propriedades termoelétricas são colocados em um circuito. Estes materiais têm a capacidade de gerar uma tensão elétrica quando há uma diferença de temperatura entre suas extremidades.</p>
+            <p><strong>Diferença de Temperatura:</strong> A diferença de temperatura entre a fonte de calor e a fonte fria cria um gradiente térmico através dos materiais termoelétricos.</p>
+            <p><strong>Geração de Eletricidade:</strong> O gradiente térmico provoca o movimento de portadores de carga (elétrons ou buracos) dentro dos materiais termoelétricos, gerando uma corrente elétrica.</p>
+
+            <p><strong>Conversão e Uso:</strong> A corrente elétrica gerada pode ser utilizada diretamente ou armazenada em baterias para uso posterior.</p>
+            
+            <h2>Quantidade de Geradores Termoelétricos no Mundo</h2>
+            <p>Os geradores termoelétricos são usados em aplicações específicas onde a confiabilidade e a durabilidade são cruciais. Algumas das principais áreas de aplicação incluem:</p>
+    
+
+            <p><strong>Espaço:</strong> Os geradores termoelétricos de radioisótopos (RTGs) são amplamente utilizados em sondas espaciais, satélites e outros equipamentos espaciais. Eles são confiáveis e podem fornecer energia por longos períodos, como visto em missões como Voyager e Curiosity.</p>
+            <p><strong>Industrial:</strong> Utilizados em ambientes industriais para recuperar energia de processos de alta temperatura, convertendo calor residual em eletricidade.</p>
+            <p><strong>Militar:</strong> Usados em equipamentos militares para fornecer energia em situações onde o acesso à eletricidade é limitado.</p>
+            <p><strong>Dispositivos Portáteis:</strong> Alguns dispositivos portáteis e sensores utilizam geradores termoelétricos para alimentar equipamentos em locais remotos.</p>
+            <p>Apesar de sua utilidade, os geradores termoelétricos representam uma pequena fração da geração total de eletricidade global devido à sua eficiência relativamente baixa e ao custo elevado dos materiais termoelétricos.</p>
+
+            <h2>Importância e Futuro da Energia Termoelétrica</h2>
+            <p>A energia termoelétrica oferece algumas vantagens únicas, como a capacidade de gerar eletricidade em ambientes extremos e de maneira contínua sem partes móveis. No entanto, para se tornarem uma fonte de energia mais comum, melhorias na eficiência dos materiais termoelétricos e reduções nos custos de produção são necessárias.</p>
+
+            <p>Pesquisas em novos materiais, como nanocompósitos e semicondutores avançados, estão em andamento para melhorar a eficiência dos geradores termoelétricos. Além disso, a integração de geradores termoelétricos em sistemas de recuperação de calor em larga escala pode aumentar sua viabilidade econômica e ambiental.</p>
+
+            <p>Em resumo, enquanto os geradores termoelétricos são atualmente utilizados em nichos específicos, eles têm o potencial de contribuir para a matriz energética global, especialmente em aplicações onde a confiabilidade e a durabilidade são essenciais. O avanço contínuo na pesquisa de materiais e tecnologias promete tornar os geradores termoelétricos mais eficientes e economicamente viáveis no futuro.</p>
         </section>
     
     </main>

@@ -88,6 +88,8 @@ main#principal > h1#titulo{
 }
 
 main#principal > div#botoes{
+    width: 330px;
+    margin: auto;
     display: flex;/* container flexivel */
     flex-direction: row;/* Define o eixo principal como horizontal da esquerda para direita */
     flex-wrap: nowrap;/* Itens fiquem na mesma linha */
@@ -96,10 +98,11 @@ main#principal > div#botoes{
 }
 
 main#principal > div > p.button{
-    width: 69px;
+    width: 130px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 0.95em;
+    font-size: 0.9em;
+    margin-bottom: 6px;
 
     color: var(--cor6);
     background-color: lightgoldenrodyellow;
@@ -129,7 +132,7 @@ section.caixa > h2{
     text-align: center;
     font-family: var(--font-paragrafo);
     font-size: 1.2em;
-    padding: 7px;
+    padding: 15px;
 }
 
 section.caixa > p{
@@ -280,19 +283,28 @@ input#area{
 
 /* ============================================ RESISTIVIDADE ====================================== */
 
-p.geradores{
+main#principal > div#botoes.quebraLinha{
+    width: 280px;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;/* container flexivel */
+    flex-direction: row;/* Define o eixo principal como horizontal da esquerda para direita */
+    flex-wrap: wrap;/* Quebrar a linha */
+    justify-content: space-between;/* Distribui os itens uniformemente, com o primeiro item alinhado ao início e o último item ao final. */
+    align-items: flex-start;/* : Alinha os itens ao início do contêiner no eixo transversal. */
+    align-content: space-around;
+}
+
+p#resumo{
+    width: 290px;
     display: block;
     margin: auto;
-    margin-bottom: 27px;
-    width: 220px;
-    padding: 5px 1px;
-    text-align: center;
+    margin-bottom: 20px;
 
-    font-size: 1.5em;
-    text-transform: uppercase;
-    background-color: lightgoldenrodyellow;
-    border: 3px solid var(--cor4);
-    font-weight: bolder;
+    text-align: justify;
+    font-size: 1.3em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
-    
+    color: white;
 }
+    
