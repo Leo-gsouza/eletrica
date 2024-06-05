@@ -70,7 +70,7 @@ section.botoes > a{/* Para todos os botoes */
     text-align: center;
 }
 
-a#botao-1{
+a#botao1{
     position: absolute;
     top: 210px;
     left: 30px;
@@ -79,7 +79,7 @@ a#botao-1{
     
 }
 
-a#botao-2{
+a#botao2{
     position: absolute;
     top: 210px;
     left: 190px;
