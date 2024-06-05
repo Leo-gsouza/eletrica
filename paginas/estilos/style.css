@@ -277,3 +277,22 @@ input#area{
     position: absolute;
     left: 165px;
 }
+
+/* ============================================ RESISTIVIDADE ====================================== */
+
+p.geradores{
+    display: block;
+    margin: auto;
+    margin-bottom: 27px;
+    width: 220px;
+    padding: 5px 1px;
+    text-align: center;
+
+    font-size: 1.5em;
+    text-transform: uppercase;
+    background-color: lightgoldenrodyellow;
+    border: 3px solid var(--cor4);
+    font-weight: bolder;
+
+    
+}

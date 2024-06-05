@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Geradores Eletricos</title>
+</head>
+<body>
+    <header>
+        <img src="../imagens/logo1.png" alt="Logo" id="logo">
+        <span class="material-symbols-outlined" id="menu" onclick="menu()">menu</span>
+    </header>
+    <menu id="itens">
+        <div>
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../paginas/grandezas-eletricas.html">Grandezas</a></p>
+            <p><a href="../paginas/resistividade.html">Resistividade</a></p>
+            <p><a href="#">vazio</a></p>
+            <p><a href="#">vazio</a></p>
+            
+        </div>
+    </menu>
+    <main id="principal">
+        <h1 id="titulo">Geradores de Energia</h1> 
+
+        <p class="geradores" onclick="visivel(hid)">Hidrelétrica</p>
+        <section class="caixa" id="hid">
+            <h2>O que é Tensão Elétrica?</h2>
+            <p>Tensão elétrica, também conhecida como diferença de potencial elétrico ou voltagem, é a força que impulsiona os elétrons a se moverem através de um condutor. É medida em volts (V) e representa a quantidade de energia potencial elétrica por unidade de carga. A tensão é o que "empurra" a corrente elétrica em um circuito.</p>
+
+            <h2>Origem da Descoberta</h2>
+            <p>A compreensão da tensão elétrica desenvolveu-se ao longo do século XVIII e XIX. Alguns marcos importantes incluem:</p>
+
+            <p><strong class="pessoa">Benjamin Franklin (1706-1790)</strong>: Desenvolveu a noção de carga elétrica e conduziu experimentos com eletricidade estática, contribuindo para a compreensão inicial de como cargas elétricas interagem.</p>
+            <p><strong class="pessoa">Alessandro Volta (1745-1827)</strong>: Em 1800, Volta inventou a pilha voltaica, a primeira fonte de tensão contínua. A sua invenção demonstrou que a tensão elétrica poderia ser gerada quimicamente.</p>
+            <p><strong class="pessoa">Georg Simon Ohm (1789-1854)</strong>: Formulou a Lei de Ohm, que relaciona a tensão (V), a corrente (I) e a resistência (R) em um circuito elétrico.</p>
+
+            <h2>Origem do Nome</h2>
+            <p>O termo "tensão" deriva do latim "tensio", que significa "alongamento" ou "pressão". A unidade de medida da tensão elétrica, o volt, foi nomeada em homenagem a Alessandro Volta, reconhecendo suas contribuições significativas para a eletricidade.</p>
+            
+
+            <h2>Explicação Detalhada</h2>
+            <p>Tensão elétrica é a diferença de potencial elétrico entre dois pontos em um circuito. Essa diferença cria um campo elétrico que força os elétrons a se moverem, gerando corrente elétrica. A tensão pode ser gerada por várias fontes, como baterias, geradores ou fontes de alimentação.</p>
+
+            <h2>Aqui está como isso funciona:</h2>
+
+            <p>Fonte de Tensão: Dispositivos como baterias ou geradores criam uma diferença de potencial elétrico entre seus terminais.</p>
+            <p>
+            <p>Campo Elétrico: Esta diferença de potencial estabelece um campo elétrico dentro do condutor.</p>
+            <p>Energia Potencial: Os elétrons na extremidade negativa têm mais energia potencial em comparação com os elétrons na extremidade positiva.</p>
+            </p>
+            <p>Movimento dos Elétrons: Devido à diferença de potencial, os elétrons são "empurrados" do terminal negativo para o terminal positivo, criando um fluxo de corrente.</p>
+            <h2>Importância da Tensão Elétrica</h2>
+            <p>Tensão elétrica é fundamental para a operação de circuitos elétricos e dispositivos eletrônicos. Ela determina a quantidade de energia disponível para mover os elétrons e, portanto, influencia a eficiência e o desempenho de sistemas elétricos. Desde a alimentação de pequenos dispositivos eletrônicos até a transmissão de energia elétrica em larga escala, a tensão elétrica é crucial em todos os aspectos da tecnologia moderna.</p>
+            <h2>Cálculos</h2>
+            <p>O valor da tensão elétrica pode ser calculado usando os valores de outras grandezas.</p>
+            <p class="calculos">1º Corrente x Resistencia </p>
+            <p class="calculos">2º Potencia  / Corrente </p>
+            <p class="calculos">3º Raiz da Potencia  x Raiz da Resistencia </p>
+
+            <fieldset><!-- TENSÃO -->
+                <legend>Informe apenas 2 Valores</legend>
+                <label for="vPotencia">Potencia: </label>
+                <input type="number" name="potencia" id="vPotencia"><br>
+                <label for="vCorrente">Corrente: </label>
+                <input type="number" name="corrente" id="vCorrente"><br>
+                <label for="vResistencia">Resistencia: </label>
+                <input type="number" name="resistencia" id="vResistencia"><br>
+                <input type="button" value="Calcular" id="vCalcular"  onclick="tensao(vPotencia, vCorrente, vResistencia, vRes, vCalcular)">
+                <div id="vRes" class="resultado"></div>
+            </fieldset>
+        </section>
+    
+    </main>
+    <script src="scripts/geradores.js"></script>
+    <script src="scripts/visivel.js"></script>
+        
+</body>
+</html>

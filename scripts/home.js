@@ -1,5 +1,6 @@
 var somGrandezas = document.getElementById('aud')
 var somResistividade = document.getElementById('aud')
+var somGeradores = document.getElementById('aud')
 
 
 function clicar(button, audio){
@@ -16,5 +17,9 @@ somGrandezas.addEventListener('ended', function(){
 
 somResistividade.addEventListener('ended', function(){
     window.location.href = 'paginas/resistividade.html'
+})
+
+somGeradores.addEventListener('ended', function(){
+    window.location.href = 'paginas/geradores.html'
 })
         

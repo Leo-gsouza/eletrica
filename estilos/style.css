@@ -85,7 +85,14 @@ a#botao2{
     left: 190px;
 
     font-size: 1.2em;
-   
+}
+
+a#botao3{
+    position: absolute;
+    top: 290px;
+    left: 30px;
+
+    font-size: 1.2em;
 }
 
 
