@@ -27,9 +27,9 @@
         <h1 id="titulo">Geradores de Energia</h1> 
         <p id="resumo">Os geradores de energia são dispositivos ou sistemas que produzem energia elétrica a partir de diferentes fontes. Cada tipo de gerador tem uma origem específica, um princípio de funcionamento distinto e um impacto ambiental particular. Vamos explorar alguns dos principais geradores de energia:</p>
         <div id="botoes" class="quebraLinha">
-            <p class="button" onclick="visivel(hid, ter)">Hidrelétrica</p>
-            <p class="button" onclick="visivel(ter, hid)">Termoelétrica</p>
-            <p class="button" onclick="visivel(ter)">Nuclear</p>
+            <p class="button" onclick="visivel(hid, ter, nuc)">Hidrelétrica</p>
+            <p class="button" onclick="visivel(ter, hid, nuc)">Termoelétrica</p>
+            <p class="button" onclick="visivel(nuc, hid, ter)">Nuclear</p>
             <p class="button" onclick="visivel(ter)">Eólica</p>
             <p class="button" onclick="visivel(ter)">Solar</p>
             <p class="button" onclick="visivel(ter)">Geotérmica</p>
@@ -42,23 +42,23 @@
             <h2>Origem e Descoberta</h2>
             <p>A energia hidrelétrica tem suas raízes na antiguidade, quando as civilizações utilizavam a força da água para mover moinhos e outros dispositivos mecânicos. A utilização da água em rodas hidráulicas remonta a civilizações antigas como a grega e a romana.</p>
 
-            <p>A descoberta da eletricidade no século XIX abriu caminho para a utilização da energia hídrica na geração de eletricidade. Em 1882, a primeira usina hidrelétrica comercial do mundo, a Vulcan Street Plant, começou a operar em Appleton, Wisconsin, nos Estados Unidos. Este marco foi crucial para o desenvolvimento das usinas hidrelétricas modernas.</p>
+            <p>A descoberta da eletricidade no século XIX abriu caminho para a utilização da energia hídrica na geração de eletricidade. <strong>Em 1882, a primeira usina hidrelétrica comercial do mundo, a Vulcan Street Plant, começou a operar em Appleton, Wisconsin, nos Estados Unidos.</strong> Este marco foi crucial para o desenvolvimento das usinas hidrelétricas modernas.</p>
             
             <h2>Funcionamento dos Geradores Hidrelétricos</h2>
-            <p>Os geradores hidrelétricos funcionam convertendo a energia cinética da água em energia elétrica. O processo pode ser descrito em várias etapas:</p>
+            <p>Os geradores hidrelétricos funcionam convertendo a <strong>energia cinética da água em energia elétrica</strong>. O processo pode ser descrito em várias etapas:</p>
 
             <p><strong>Reservatório de Água:</strong> A água é armazenada em um reservatório ou represa.</p>
             <p><strong>Entrada da Água:</strong> A água é liberada do reservatório através de comportas, movendo-se por um canal ou túnel em direção às turbinas.</p>
             <p><strong>Turbinas:</strong> A água em movimento gira as turbinas, que estão conectadas a geradores. A energia cinética da água é transformada em energia mecânica.</p>
-            <p><strong>Geradores:</strong> As turbinas estão acopladas a geradores. Quando as turbinas giram, elas movem os rotores dos geradores, que transformam a energia mecânica em energia elétrica por meio de indução eletromagnética.</p>
-            <p><strong>Transformadores:</strong> A energia elétrica gerada é então passada por transformadores para ajustar a voltagem e ser transmitida pela rede elétrica.</p>
+            <p><strong>Geradores:</strong> As turbinas estão acopladas a geradores. Quando as turbinas giram, elas movem os rotores dos geradores, que <strong>transformam a energia mecânica em energia elétrica por meio de indução eletromagnética</strong>.</p>
+            <p><strong>Transformadores:</strong> A energia elétrica gerada é então passada por transformadores para ajustar a tensão e ser transmitida pela rede elétrica.</p>
 
             <h2>Quantidade de Geradores Hidrelétricos no Mundo</h2>
             <p>A energia hidrelétrica é uma das principais fontes de energia renovável no mundo. A quantidade de usinas hidrelétricas varia de acordo com o país e a capacidade de aproveitamento dos recursos hídricos disponíveis. Aqui estão alguns dados relevantes:</p>
 
-            <p><strong>China:</strong> É o maior produtor de energia hidrelétrica do mundo, com usinas como a Barragem das Três Gargantas, que é a maior usina hidrelétrica do mundo em termos de capacidade instalada (22,5 GW).</p>
-            <p><strong>Brasil:</strong> O Brasil possui grandes usinas hidrelétricas, como Itaipu, que é uma das maiores do mundo com uma capacidade instalada de 14 GW.</p>
-            <p><strong>Estados Unidos:</strong> A energia hidrelétrica também é significativa nos Estados Unidos, com a Hoover Dam e a Grand Coulee Dam sendo exemplos notáveis.</p>
+            <p><strong>China:</strong> É o maior produtor de energia hidrelétrica do mundo, com usinas como a <strong>Barragem das Três Gargantas</strong>, que é a maior usina hidrelétrica do mundo em termos de capacidade instalada (22,5 GW).</p>
+            <p><strong>Brasil:</strong> O Brasil possui grandes usinas hidrelétricas, como <strong>Itaipu</strong>, que é uma das maiores do mundo com uma capacidade instalada de 14 GW.</p>
+            <p><strong>Estados Unidos:</strong> A energia hidrelétrica também é significativa nos Estados Unidos, com a <strong>Hoover Dam</strong> e a <strong>Grand Coulee Dam</strong> sendo exemplos notáveis.</p>
             <p><strong>Canadá:</strong> O Canadá é um dos maiores produtores de energia hidrelétrica, com uma rede extensa de usinas espalhadas pelo país.</p>
             <p><strong>Outros Países:</strong> Outros países com grandes capacidades hidrelétricas incluem a Rússia, a Índia, a Noruega e a Suécia.</p>
             <p>Segundo a Agência Internacional de Energia (IEA), a capacidade mundial de geração de energia hidrelétrica em 2020 era de aproximadamente <strong>1.300 gigawatts (GW)</strong>. Este número representa cerca de 16% da capacidade total de geração de eletricidade no mundo e cerca de 60% da capacidade global de geração de eletricidade renovável.</p>
@@ -72,15 +72,17 @@
         </section>
 
         <section class="caixa" id="ter">
-            <h2 style="text-transform: uppercase;">Termoeletrica</h2>
+            <h2 style="text-transform: uppercase;">Termoelétrica</h2>
             <img src="../imagens/termoeletrico.jpg" alt="termoeletrico">
             <h2>Origem e Descoberta</h2>
-            <p>Os geradores termoelétricos têm uma origem que remonta ao século XIX, com a descoberta do efeito termoelétrico por Thomas Johann Seebeck em 1821. Seebeck descobriu que uma corrente elétrica pode ser gerada a partir da diferença de temperatura entre dois metais diferentes conectados em um circuito fechado. Este fenômeno é conhecido como efeito Seebeck, que é a base do funcionamento dos geradores termoelétricos.</p>
+            <p>Os geradores termoelétricos têm uma origem que remonta ao século XIX, com a descoberta do efeito termoelétrico por <strong class="pessoa">Thomas Johann Seebeck em 1821</strong>. Seebeck descobriu que uma corrente elétrica pode ser gerada a partir da diferença de temperatura entre dois metais diferentes conectados em um circuito fechado. Este fenômeno é conhecido como efeito Seebeck, que é a base do funcionamento dos geradores termoelétricos.</p>
 
-            <p>A utilização prática dos geradores termoelétricos começou a ser explorada no século XX, especialmente durante a Segunda Guerra Mundial e na era espacial, onde a confiabilidade e a ausência de partes móveis tornavam essas tecnologias particularmente úteis.</p>
+            <p><strong>A utilização prática dos geradores termoelétricos começou a ser explorada no século XX, especialmente durante a Segunda Guerra Mundial e na era espacial,</strong> onde a confiabilidade e a ausência de partes móveis tornavam essas tecnologias particularmente úteis.</p>
 
             <h2>Funcionamento dos Geradores Termoelétricos</h2>
-            <p>Os geradores termoelétricos convertem diretamente o calor em eletricidade usando o efeito Seebeck. O funcionamento pode ser descrito da seguinte maneira:</p>
+            <p>Os geradores termoelétricos <strong>convertem diretamente o calor em eletricidade usando o efeito Seebeck</strong>.</p> 
+            <img src="../imagens/termoeletrico2.jpg" alt="efeito seebeck">
+            <p>O funcionamento pode ser descrito da seguinte maneira:</p>
 
             <p><strong>Fonte de Calor:</strong> A energia térmica é fornecida por uma fonte de calor. Esta pode ser uma chama, um reator nuclear, ou qualquer outra fonte de calor.</p>
             <p><strong>Materiais Termoelétricos:</strong> Materiais com propriedades termoelétricas são colocados em um circuito. Estes materiais têm a capacidade de gerar uma tensão elétrica quando há uma diferença de temperatura entre suas extremidades.</p>
@@ -92,19 +94,61 @@
             <h2>Quantidade de Geradores Termoelétricos no Mundo</h2>
             <p>Os geradores termoelétricos são usados em aplicações específicas onde a confiabilidade e a durabilidade são cruciais. Algumas das principais áreas de aplicação incluem:</p>
     
-
-            <p><strong>Espaço:</strong> Os geradores termoelétricos de radioisótopos (RTGs) são amplamente utilizados em sondas espaciais, satélites e outros equipamentos espaciais. Eles são confiáveis e podem fornecer energia por longos períodos, como visto em missões como Voyager e Curiosity.</p>
+            <p><strong>Espaço:</strong> Os geradores termoelétricos de <strong>radioisótopos (RTGs)</strong> são amplamente utilizados em sondas espaciais, satélites e outros equipamentos espaciais. Eles são confiáveis e podem fornecer energia por longos períodos, como visto em missões como <strong>Voyager e Curiosity</strong>.</p>
             <p><strong>Industrial:</strong> Utilizados em ambientes industriais para recuperar energia de processos de alta temperatura, convertendo calor residual em eletricidade.</p>
             <p><strong>Militar:</strong> Usados em equipamentos militares para fornecer energia em situações onde o acesso à eletricidade é limitado.</p>
             <p><strong>Dispositivos Portáteis:</strong> Alguns dispositivos portáteis e sensores utilizam geradores termoelétricos para alimentar equipamentos em locais remotos.</p>
-            <p>Apesar de sua utilidade, os geradores termoelétricos representam uma pequena fração da geração total de eletricidade global devido à sua eficiência relativamente baixa e ao custo elevado dos materiais termoelétricos.</p>
+            <p>Apesar de sua utilidade, <strong>os geradores termoelétricos representam uma pequena fração da geração total de eletricidade global devido à sua eficiência relativamente baixa</strong> e ao custo elevado dos materiais termoelétricos.</p>
 
             <h2>Importância e Futuro da Energia Termoelétrica</h2>
             <p>A energia termoelétrica oferece algumas vantagens únicas, como a capacidade de gerar eletricidade em ambientes extremos e de maneira contínua sem partes móveis. No entanto, para se tornarem uma fonte de energia mais comum, melhorias na eficiência dos materiais termoelétricos e reduções nos custos de produção são necessárias.</p>
 
-            <p>Pesquisas em novos materiais, como nanocompósitos e semicondutores avançados, estão em andamento para melhorar a eficiência dos geradores termoelétricos. Além disso, a integração de geradores termoelétricos em sistemas de recuperação de calor em larga escala pode aumentar sua viabilidade econômica e ambiental.</p>
+            <p><strong>Pesquisas em novos materiais, como nanocompósitos e semicondutores avançados, estão em andamento para melhorar a eficiência dos geradores termoelétricos.</strong> Além disso, a integração de geradores termoelétricos em sistemas de recuperação de calor em larga escala pode aumentar sua viabilidade econômica e ambiental.</p>
 
             <p>Em resumo, enquanto os geradores termoelétricos são atualmente utilizados em nichos específicos, eles têm o potencial de contribuir para a matriz energética global, especialmente em aplicações onde a confiabilidade e a durabilidade são essenciais. O avanço contínuo na pesquisa de materiais e tecnologias promete tornar os geradores termoelétricos mais eficientes e economicamente viáveis no futuro.</p>
+        </section>
+
+        <section class="caixa" id="nuc">
+            <h2 style="text-transform: uppercase;">Nuclear</h2>
+            <img src="../imagens/nuclear.jpg" alt="Nuclear">
+            <h2>Origem e Descoberta</h2>
+            <p>A descoberta da fissão nuclear, o processo pelo qual o núcleo de um átomo se divide em dois ou mais núcleos menores, liberando uma grande quantidade de energia, foi um marco na história da ciência. Em 1938, os físicos alemães Otto Hahn e Fritz Strassmann descobriram a fissão nuclear do urânio. Pouco depois, Lise Meitner e Otto Frisch explicaram o fenômeno.</p>
+            
+            <p>O uso prático da energia nuclear para a geração de eletricidade começou após a Segunda Guerra Mundial. A primeira usina nuclear comercial do mundo foi inaugurada em 1954 em Obninsk, na União Soviética. Nos Estados Unidos, a usina nuclear de Shippingport, na Pensilvânia, começou a operar em 1957.</p>
+            
+            <h2>Funcionamento dos Geradores Nucleares</h2>
+            <p>Os geradores nucleares, ou reatores nucleares, produzem eletricidade a partir da energia liberada pela fissão nuclear. O processo pode ser descrito da seguinte maneira:</p>
+            
+            <p>Reação de Fissão: A fissão nuclear ocorre quando núcleos de átomos pesados, como o urânio-235 ou plutônio-239, são bombardeados com nêutrons, causando a divisão do núcleo em núcleos menores e liberando uma grande quantidade de energia na forma de calor, além de mais nêutrons.</p>
+            <p>Moderador e Controle: Em um reator nuclear, o núcleo contém barras de combustível (geralmente urânio ou plutônio) e é rodeado por um moderador (água, grafite ou outro material) que reduz a velocidade dos nêutrons para manter a reação em cadeia controlada. Barras de controle feitas de materiais que absorvem nêutrons são usadas para ajustar a taxa de fissão.</p>
+            <p>Geração de Calor: O calor gerado pela fissão nuclear aquece a água em um circuito primário, que circula através do reator.</p>
+            <p>Geração de Vapor: O calor do circuito primário é transferido para um circuito secundário através de um gerador de vapor, onde a água é transformada em vapor.</p>
+            <p>Turbinas e Geradores: O vapor gerado é direcionado para turbinas, fazendo-as girar. As turbinas estão conectadas a geradores que convertem a energia mecânica em eletricidade.</p>
+            <p>Condensação: O vapor é então resfriado em condensadores, transformando-se de volta em água para ser reutilizado no sistema.</p>
+            <h2>Quantidade de Geradores Nucleares no Mundo</h2>
+            <p>A energia nuclear é uma importante fonte de eletricidade em muitos países ao redor do mundo. A distribuição e a quantidade de reatores nucleares variam por país, mas alguns dos maiores utilizadores de energia nuclear incluem:</p>
+            
+            <p>Estados Unidos: Possuem o maior número de reatores nucleares operacionais, com 93 reatores em operação, fornecendo cerca de 20% da eletricidade do país.</p>
+            <p>França: Depende fortemente da energia nuclear, com 56 reatores que geram cerca de 70% da eletricidade do país.</p>
+            <p>China: Tem expandido rapidamente sua capacidade nuclear, com 54 reatores operacionais e muitos outros em construção.</p>
+            <p>Rússia: Possui 38 reatores em operação, com planos de expansão significativa.</p>
+            <p>Japão: Antes do desastre de Fukushima em 2011, o Japão tinha 54 reatores operacionais. Desde então, muitos foram desativados, mas alguns reatores foram reiniciados e a energia nuclear ainda representa uma parte importante da matriz energética do país.</p>
+            <p>Segundo a Agência Internacional de Energia Atômica (AIEA), existem cerca de 440 reatores nucleares operacionais em todo o mundo, com uma capacidade total de aproximadamente 390 gigawatts elétricos (GWe). Além disso, vários países estão em processo de construir novos reatores para aumentar sua capacidade de geração nuclear.</p>
+            
+            <h2>Importância e Futuro da Energia Nuclear</h2>
+            <p>A energia nuclear oferece várias vantagens:</p>
+            
+            <p>Baixas Emissões de Carbono: A geração de eletricidade a partir de energia nuclear produz baixas emissões de gases de efeito estufa, contribuindo para a mitigação das mudanças climáticas.</p>
+            <p>Capacidade de Base: Usinas nucleares podem fornecer uma quantidade constante e significativa de eletricidade, funcionando como uma fonte de energia de base.</p>
+            <p>Redução da Dependência de Combustíveis Fósseis: A energia nuclear ajuda a diversificar a matriz energética e reduzir a dependência de combustíveis fósseis.</p>
+            <p>No entanto, a energia nuclear também enfrenta desafios significativos, incluindo:</p>
+            
+            <p>Segurança: A segurança dos reatores é uma preocupação crítica, especialmente após acidentes como Chernobyl e Fukushima.</p>
+            <p>Resíduos Nucleares: O manejo e a disposição dos resíduos nucleares radioativos são desafios técnicos e ambientais.</p>
+            <p>Custo: A construção e manutenção de usinas nucleares são altamente dispendiosas.</p>
+            <p>O futuro da energia nuclear pode envolver a adoção de novas tecnologias, como reatores modulares pequenos (SMRs) e reatores de quarta geração, que prometem melhorar a segurança, reduzir custos e minimizar os resíduos. A pesquisa e o desenvolvimento contínuos são essenciais para enfrentar os desafios e maximizar os benefícios da energia nuclear como parte de uma matriz energética sustentável.</p>
+            
+            <p>Em resumo, os geradores nucleares são uma fonte significativa de energia elétrica global, com potencial para contribuir para um futuro energético mais limpo e sustentável, desde que os desafios técnicos, econômicos e de segurança possam ser adequadamente gerenciados.</p>
         </section>
     
     </main>

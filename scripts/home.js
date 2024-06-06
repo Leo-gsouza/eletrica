@@ -1,6 +1,6 @@
-var somGrandezas = document.getElementById('aud')
-var somResistividade = document.getElementById('aud')
-var somGeradores = document.getElementById('aud')
+var somGrandezas = document.getElementById('aud1')
+var somResistividade = document.getElementById('aud2')
+var somGeradores = document.getElementById('aud3')
 
 
 function clicar(button, audio){
