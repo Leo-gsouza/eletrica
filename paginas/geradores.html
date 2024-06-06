@@ -27,10 +27,10 @@
         <h1 id="titulo">Geradores de Energia</h1> 
         <p id="resumo">Os geradores de energia são dispositivos ou sistemas que produzem energia elétrica a partir de diferentes fontes. Cada tipo de gerador tem uma origem específica, um princípio de funcionamento distinto e um impacto ambiental particular. Vamos explorar alguns dos principais geradores de energia:</p>
         <div id="botoes" class="quebraLinha">
-            <p class="button" onclick="visivel(hid, ter, nuc)">Hidrelétrica</p>
-            <p class="button" onclick="visivel(ter, hid, nuc)">Termoelétrica</p>
-            <p class="button" onclick="visivel(nuc, hid, ter)">Nuclear</p>
-            <p class="button" onclick="visivel(ter)">Eólica</p>
+            <p class="button" onclick="visivel(hid, ter, nuc, eol)">Hidrelétrica</p>
+            <p class="button" onclick="visivel(ter, hid, nuc, eol)">Termoelétrica</p>
+            <p class="button" onclick="visivel(nuc, hid, ter, eol )">Nuclear</p>
+            <p class="button" onclick="visivel(eol, hid, ter, nuc)">Eólica</p>
             <p class="button" onclick="visivel(ter)">Solar</p>
             <p class="button" onclick="visivel(ter)">Geotérmica</p>
             <p class="button" onclick="visivel(ter)">Biomassa</p>
@@ -112,43 +112,81 @@
             <h2 style="text-transform: uppercase;">Nuclear</h2>
             <img src="../imagens/nuclear.jpg" alt="Nuclear">
             <h2>Origem e Descoberta</h2>
-            <p>A descoberta da fissão nuclear, o processo pelo qual o núcleo de um átomo se divide em dois ou mais núcleos menores, liberando uma grande quantidade de energia, foi um marco na história da ciência. Em 1938, os físicos alemães Otto Hahn e Fritz Strassmann descobriram a fissão nuclear do urânio. Pouco depois, Lise Meitner e Otto Frisch explicaram o fenômeno.</p>
+            <p>A descoberta da <strong>fissão nuclear, o processo pelo qual o núcleo de um átomo se divide em dois ou mais núcleos menores, liberando uma grande quantidade de energia</strong>, foi um marco na história da ciência. <strong class="pessoa">Em 1938, os físicos alemães Otto Hahn e Fritz Strassmann</strong> descobriram a fissão nuclear do urânio. Pouco depois, <strong class="pessoa">Lise Meitner e Otto Frisch</strong> explicaram o fenômeno.</p>
             
-            <p>O uso prático da energia nuclear para a geração de eletricidade começou após a Segunda Guerra Mundial. A primeira usina nuclear comercial do mundo foi inaugurada em 1954 em Obninsk, na União Soviética. Nos Estados Unidos, a usina nuclear de Shippingport, na Pensilvânia, começou a operar em 1957.</p>
+            <p>O uso prático da energia nuclear para a geração de eletricidade começou após a Segunda Guerra Mundial. <strong>A primeira usina nuclear comercial do mundo foi inaugurada em 1954 em Obninsk, na União Soviética</strong>. Nos Estados Unidos, a usina nuclear de Shippingport, na Pensilvânia, começou a operar em 1957.</p>
             
             <h2>Funcionamento dos Geradores Nucleares</h2>
             <p>Os geradores nucleares, ou reatores nucleares, produzem eletricidade a partir da energia liberada pela fissão nuclear. O processo pode ser descrito da seguinte maneira:</p>
+            <img src="../imagens/nuclear2.jpg" alt="fissão nuclear">
             
-            <p>Reação de Fissão: A fissão nuclear ocorre quando núcleos de átomos pesados, como o urânio-235 ou plutônio-239, são bombardeados com nêutrons, causando a divisão do núcleo em núcleos menores e liberando uma grande quantidade de energia na forma de calor, além de mais nêutrons.</p>
-            <p>Moderador e Controle: Em um reator nuclear, o núcleo contém barras de combustível (geralmente urânio ou plutônio) e é rodeado por um moderador (água, grafite ou outro material) que reduz a velocidade dos nêutrons para manter a reação em cadeia controlada. Barras de controle feitas de materiais que absorvem nêutrons são usadas para ajustar a taxa de fissão.</p>
-            <p>Geração de Calor: O calor gerado pela fissão nuclear aquece a água em um circuito primário, que circula através do reator.</p>
-            <p>Geração de Vapor: O calor do circuito primário é transferido para um circuito secundário através de um gerador de vapor, onde a água é transformada em vapor.</p>
-            <p>Turbinas e Geradores: O vapor gerado é direcionado para turbinas, fazendo-as girar. As turbinas estão conectadas a geradores que convertem a energia mecânica em eletricidade.</p>
-            <p>Condensação: O vapor é então resfriado em condensadores, transformando-se de volta em água para ser reutilizado no sistema.</p>
+            <p><strong>Reação de Fissão:</strong> A fissão nuclear ocorre quando núcleos de átomos pesados, como o urânio-235 ou plutônio-239, são bombardeados com nêutrons, causando a divisão do núcleo em núcleos menores e liberando uma grande quantidade de energia na forma de calor, além de mais nêutrons.</p>
+            <p><strong>Moderador e Controle:</strong> Em um reator nuclear, o núcleo contém barras de combustível (geralmente urânio ou plutônio) e é rodeado por um moderador (água, grafite ou outro material) que reduz a velocidade dos nêutrons para manter a reação em cadeia controlada. Barras de controle feitas de materiais que absorvem nêutrons são usadas para ajustar a taxa de fissão.</p>
+            <p><strong>Geração de Calor:</strong> O calor gerado pela fissão nuclear aquece a água em um circuito primário, que circula através do reator.</p>
+            <p><strong>Geração de Vapor:</strong> O calor do circuito primário é transferido para um circuito secundário através de um gerador de vapor, onde a água é transformada em vapor.</p>
+            <p><strong>Turbinas e Geradores:</strong> O vapor gerado é direcionado para turbinas, fazendo-as girar. As turbinas estão conectadas a geradores que convertem a energia mecânica em eletricidade.</p>
+            <p><strong>Condensação:</strong> O vapor é então resfriado em condensadores, transformando-se de volta em água para ser reutilizado no sistema.</p>
             <h2>Quantidade de Geradores Nucleares no Mundo</h2>
             <p>A energia nuclear é uma importante fonte de eletricidade em muitos países ao redor do mundo. A distribuição e a quantidade de reatores nucleares variam por país, mas alguns dos maiores utilizadores de energia nuclear incluem:</p>
             
-            <p>Estados Unidos: Possuem o maior número de reatores nucleares operacionais, com 93 reatores em operação, fornecendo cerca de 20% da eletricidade do país.</p>
-            <p>França: Depende fortemente da energia nuclear, com 56 reatores que geram cerca de 70% da eletricidade do país.</p>
-            <p>China: Tem expandido rapidamente sua capacidade nuclear, com 54 reatores operacionais e muitos outros em construção.</p>
-            <p>Rússia: Possui 38 reatores em operação, com planos de expansão significativa.</p>
-            <p>Japão: Antes do desastre de Fukushima em 2011, o Japão tinha 54 reatores operacionais. Desde então, muitos foram desativados, mas alguns reatores foram reiniciados e a energia nuclear ainda representa uma parte importante da matriz energética do país.</p>
-            <p>Segundo a Agência Internacional de Energia Atômica (AIEA), existem cerca de 440 reatores nucleares operacionais em todo o mundo, com uma capacidade total de aproximadamente 390 gigawatts elétricos (GWe). Além disso, vários países estão em processo de construir novos reatores para aumentar sua capacidade de geração nuclear.</p>
+            <p><strong>Estados Unidos</strong>: Possuem o maior número de reatores nucleares operacionais, com <strong>93 reatores em operação,</strong> fornecendo cerca de 20% da eletricidade do país.</p>
+            <p><strong>França:</strong> Depende fortemente da energia nuclear, com <strong>56 reatores</strong> que geram cerca de 70% da eletricidade do país.</p>
+            <p><strong>China:</strong> Tem expandido rapidamente sua capacidade nuclear, com <strong>54 reatores operacionais</strong> e muitos outros em construção.</p>
+            <p><strong>Rússia:</strong> Possui <strong>38 reatores em operação</strong>, com planos de expansão significativa.</p>
+            <p><strong>Japão:</strong> Antes do desastre de Fukushima em 2011, o Japão tinha 54 reatores operacionais. Desde então, muitos foram desativados, mas alguns reatores foram reiniciados e a energia nuclear ainda representa uma parte importante da matriz energética do país.</p>
+            <p>Segundo a Agência Internacional de Energia Atômica (AIEA), <strong>existem cerca de 440 reatores nucleares operacionais em todo o mundo, com uma capacidade total de aproximadamente 390 gigawatts elétricos (GWe)</strong>. Além disso, vários países estão em processo de construir novos reatores para aumentar sua capacidade de geração nuclear.</p>
             
             <h2>Importância e Futuro da Energia Nuclear</h2>
             <p>A energia nuclear oferece várias vantagens:</p>
             
-            <p>Baixas Emissões de Carbono: A geração de eletricidade a partir de energia nuclear produz baixas emissões de gases de efeito estufa, contribuindo para a mitigação das mudanças climáticas.</p>
-            <p>Capacidade de Base: Usinas nucleares podem fornecer uma quantidade constante e significativa de eletricidade, funcionando como uma fonte de energia de base.</p>
-            <p>Redução da Dependência de Combustíveis Fósseis: A energia nuclear ajuda a diversificar a matriz energética e reduzir a dependência de combustíveis fósseis.</p>
+            <p><strong>Baixas Emissões de Carbono:</strong> A geração de eletricidade a partir de energia nuclear produz baixas emissões de gases de efeito estufa, contribuindo para a mitigação das mudanças climáticas.</p>
+            <p><strong>Capacidade de Base:</strong> Usinas nucleares podem fornecer uma quantidade constante e significativa de eletricidade, funcionando como uma fonte de energia de base.</p>
+            <p><strong>Redução da Dependência de Combustíveis Fósseis:</strong> A energia nuclear ajuda a diversificar a matriz energética e reduzir a dependência de combustíveis fósseis.</p>
             <p>No entanto, a energia nuclear também enfrenta desafios significativos, incluindo:</p>
             
-            <p>Segurança: A segurança dos reatores é uma preocupação crítica, especialmente após acidentes como Chernobyl e Fukushima.</p>
-            <p>Resíduos Nucleares: O manejo e a disposição dos resíduos nucleares radioativos são desafios técnicos e ambientais.</p>
-            <p>Custo: A construção e manutenção de usinas nucleares são altamente dispendiosas.</p>
+            <p><strong>Segurança:</strong> A segurança dos reatores é uma preocupação crítica, especialmente após <strong>acidentes como Chernobyl e Fukushima.</strong></p>
+            <p><strong>Resíduos Nucleares:</strong> O manejo e a disposição dos resíduos nucleares radioativos são desafios técnicos e ambientais.</p>
+            <p><strong>Custo:</strong> A construção e manutenção de usinas nucleares são altamente dispendiosas.</p>
             <p>O futuro da energia nuclear pode envolver a adoção de novas tecnologias, como reatores modulares pequenos (SMRs) e reatores de quarta geração, que prometem melhorar a segurança, reduzir custos e minimizar os resíduos. A pesquisa e o desenvolvimento contínuos são essenciais para enfrentar os desafios e maximizar os benefícios da energia nuclear como parte de uma matriz energética sustentável.</p>
             
             <p>Em resumo, os geradores nucleares são uma fonte significativa de energia elétrica global, com potencial para contribuir para um futuro energético mais limpo e sustentável, desde que os desafios técnicos, econômicos e de segurança possam ser adequadamente gerenciados.</p>
+        </section>
+
+        <section class="caixa" id="eol">
+            <h2 style="text-transform: uppercase;">Eolica</h2>
+            <img src="../imagens/eolica.jpg" alt="eolica" style="width: 215px;">
+            <h2>Origem e Descoberta</h2>
+            <p>Os primeiros usos do vento para gerar energia datam de milhares de anos atrás, quando civilizações antigas usavam moinhos de vento para bombear água e moer grãos. Esses moinhos de vento, desenvolvidos na Pérsia por volta de 500-900 d.C., eram bastante rudimentares comparados às turbinas eólicas modernas.</p>
+
+            <p>A aplicação do vento para a geração de eletricidade começou no final do século XIX. Em 1887, o professor escocês James Blyth construiu a primeira turbina eólica para gerar eletricidade, usando-a para iluminar sua casa. Pouco depois, Charles F. Brush, um inventor americano, construiu uma turbina eólica com 12 kW de capacidade, usada para carregar baterias em sua casa em Cleveland, Ohio.</p>
+            
+            <h2>Funcionamento dos Geradores Eólicos</h2>
+            <p>Os geradores eólicos convertem a energia cinética do vento em energia elétrica. O processo pode ser descrito da seguinte maneira:</p>
+            
+            <p>Captura do Vento: As pás da turbina capturam o vento, que faz com que as pás girem em torno de um eixo.</p>
+            <p>Transmissão da Energia Mecânica: As pás estão conectadas a um eixo que gira junto com elas. Este eixo está ligado a um multiplicador de velocidade (gearbox) que aumenta a rotação.</p>
+            <p>Geração de Eletricidade: O eixo do multiplicador está conectado a um gerador, geralmente um gerador de indução ou síncrono, que converte a energia mecânica em energia elétrica.</p>
+            <p>Transformação e Distribuição: A eletricidade gerada é transformada para uma voltagem apropriada e então transmitida para a rede elétrica para distribuição.</p>
+            <h2>Quantidade de Geradores Eólicos no Mundo</h2>
+            <p>A energia eólica tem crescido significativamente nas últimas décadas e representa uma parte crescente da matriz energética global. A capacidade instalada de energia eólica varia entre os países, mas alguns dos maiores produtores são:</p>
+            
+            <p>China: É o maior produtor mundial de energia eólica, com uma capacidade instalada que ultrapassa os 280 gigawatts (GW).</p>
+            <p>Estados Unidos: A capacidade instalada nos EUA é de cerca de 120 GW.</p>
+            <p>Alemanha: É um dos líderes na Europa, com uma capacidade instalada de aproximadamente 60 GW.</p>
+            <p>Índia: Também tem uma significativa capacidade instalada, com cerca de 40 GW.</p>
+            <p>Espanha, Reino Unido, e Brasil: Outros países com grandes capacidades eólicas instaladas, contribuindo significativamente para suas matrizes energéticas.</p>
+            
+            <p>Segundo o Conselho Global de Energia Eólica (GWEC), a capacidade total instalada de energia eólica no mundo superou os 750 GW em 2020 e continua a crescer à medida que novos parques eólicos são instalados e tecnologias mais eficientes são desenvolvidas.</p>
+            
+            <h2>Importância e Futuro da Energia Eólica</h2>
+            <p>A energia eólica é uma das fontes de energia renovável de mais rápido crescimento no mundo. Seus benefícios incluem:</p>
+            
+            <p>Sustentabilidade: A energia eólica é uma fonte limpa e renovável, sem emissões de gases de efeito estufa durante a operação.</p>
+            <p>Redução de Custos: Os custos da energia eólica têm diminuído significativamente, tornando-a competitiva com fontes tradicionais de energia.</p>
+            <p>Desenvolvimento Tecnológico: Avanços contínuos em tecnologia, como turbinas maiores e mais eficientes, melhoram a viabilidade econômica e a capacidade de geração.</p>
+            <p>O futuro da energia eólica é promissor, com potencial para expansão tanto em terra (onshore) quanto no mar (offshore). A energia eólica offshore, em particular, está ganhando destaque devido ao potencial de captar ventos mais fortes e consistentes.</p>
+            
+            <p>Em resumo, os geradores eólicos desempenham um papel crucial na transição para uma matriz energética global mais sustentável. Com o contínuo desenvolvimento tecnológico e o aumento do investimento em energia renovável, a energia eólica está bem posicionada para se tornar uma das principais fontes de energia do futuro.</p>
         </section>
     
     </main>
