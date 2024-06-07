@@ -27,13 +27,13 @@
         <h1 id="titulo">Geradores de Energia</h1> 
         <p id="resumo">Os geradores de energia são dispositivos ou sistemas que produzem energia elétrica a partir de diferentes fontes. Cada tipo de gerador tem uma origem específica, um princípio de funcionamento distinto e um impacto ambiental particular. Vamos explorar alguns dos principais geradores de energia:</p>
         <div id="botoes" class="quebraLinha">
-            <p class="button" onclick="visivel(hid, ter, nuc, eol, sol, geo)">Hidrelétrica</p>
-            <p class="button" onclick="visivel(ter, hid, nuc, eol, sol, geo)">Termoelétrica</p>
-            <p class="button" onclick="visivel(nuc, hid, ter, eol, sol, geo)">Nuclear</p>
-            <p class="button" onclick="visivel(eol, hid, ter, nuc, sol, geo)">Eólica</p>
-            <p class="button" onclick="visivel(sol, hid, ter, nuc, eol, geo)">Solar</p>
-            <p class="button" onclick="visivel(geo, hid, ter, nuc, eol, sol)">Geotérmica</p>
-            <p class="button" onclick="visivel(ter)">Biomassa</p>
+            <p class="button" onclick="visivel(hid, ter, nuc, eol, sol, geo, bio)">Hidrelétrica</p>
+            <p class="button" onclick="visivel(ter, hid, nuc, eol, sol, geo, bio)">Termoelétrica</p>
+            <p class="button" onclick="visivel(nuc, hid, ter, eol, sol, geo, bio)">Nuclear</p>
+            <p class="button" onclick="visivel(eol, hid, ter, nuc, sol, geo, bio)">Eólica</p>
+            <p class="button" onclick="visivel(sol, hid, ter, nuc, eol, geo, bio)">Solar</p>
+            <p class="button" onclick="visivel(geo, hid, ter, nuc, eol, sol, bio)">Geotérmica</p>
+            <p class="button" onclick="visivel(bio, hid, ter, nuc, eol, sol, geo)">Biomassa</p>
         </div>
 
         <section class="caixa" id="hid">
@@ -210,6 +210,7 @@
 
             <p>China: É o maior produtor de energia solar do mundo, com uma capacidade instalada que ultrapassa os 250 gigawatts (GW).</p>
             <p>Estados Unidos: Possuem uma capacidade instalada de energia solar de aproximadamente 100 GW.</p>
+
             <p>Japão: Tem uma capacidade instalada significativa, com cerca de 70 GW.</p>
             <p>Alemanha: É um dos líderes na Europa, com uma capacidade instalada de cerca de 60 GW.</p>
             <p>Índia: Também tem uma grande capacidade instalada, com cerca de 50 GW.</p>
@@ -273,10 +274,58 @@
                 
             <p>Em resumo, os geradores geotérmicos são uma parte importante da matriz energética renovável global, oferecendo uma fonte de energia limpa, confiável e sustentável. Com os avanços tecnológicos e o aumento dos investimentos, a energia geotérmica pode desempenhar um papel ainda mais significativo no futuro energético mundial.</p>
         </section>
-    
+
+        <section class="caixa" id="bio">
+            <h2 style="text-transform: uppercase;">Biomassa</h2>
+            <img src="../imagens/biomassa.jpg" alt="biomassa" style="width: 215px;">
+            <h2>Origem e Descoberta</h2>
+            <p>A utilização da biomassa como fonte de energia remonta aos primórdios da civilização humana, quando a queima de madeira foi usada para aquecimento e cozimento. No entanto, a utilização moderna da biomassa para geração de eletricidade e produção de biocombustíveis começou a se desenvolver de forma significativa durante o século XX, em resposta à busca por fontes de energia renovável e alternativas aos combustíveis fósseis.</p>
+
+            <p>A ciência moderna da conversão de biomassa em energia começou a tomar forma no início do século XX, mas foi durante as crises do petróleo nas décadas de 1970 e 1980 que o interesse em fontes de energia alternativas, incluindo a biomassa, se intensificou. A tecnologia de geração de energia a partir de biomassa evoluiu significativamente desde então, com avanços na eficiência de conversão e na redução das emissões associadas.</p>
+
+            <h2>Funcionamento dos Geradores de Biomassa</h2>
+            <p>Os geradores de biomassa convertem a matéria orgânica em energia elétrica e calor. O processo pode ser descrito da seguinte maneira:</p>
+
+            <p>Matéria-Prima: A biomassa pode incluir resíduos agrícolas (palha, bagaço de cana), resíduos florestais (madeira, galhos), resíduos urbanos (lixo orgânico), e culturas energéticas (milho, cana-de-açúcar).</p>
+            <p>Processo de Conversão: Existem várias tecnologias para converter biomassa em energia:</p>
+            <p>Combustão Direta: A biomassa é queimada em caldeiras para produzir vapor, que aciona turbinas conectadas a geradores elétricos.</p>
+            <p>Gaseificação: A biomassa é convertida em gás de síntese (syngas) por meio de um processo de aquecimento em alta temperatura com um controle de oxigênio. O syngas pode ser usado para gerar eletricidade ou como matéria-prima para produtos químicos.</p>
+            <p>Pirólise: A biomassa é aquecida na ausência de oxigênio, resultando em produtos como bio-óleo, carvão vegetal e gases que podem ser usados como combustível.</p>
+            <p>Digestão Anaeróbica: A biomassa orgânica é decomposta por microrganismos na ausência de oxigênio, produzindo biogás (principalmente metano e dióxido de carbono) que pode ser usado para gerar eletricidade.</p>
+            <p>Geração de Vapor: Na combustão direta e na gaseificação, o calor gerado é usado para produzir vapor.</p>
+            <p>Turbinas e Geradores: O vapor ou gás produzido é usado para acionar turbinas conectadas a geradores, que convertem a energia mecânica em energia elétrica.</p>
+            <p>Distribuição e Uso: A eletricidade gerada é distribuída pela rede elétrica ou utilizada localmente.</p>
+           
+            <h2>Quantidade de Geradores de Biomassa no Mundo</h2>
+            
+            <p>A energia de biomassa é uma fonte significativa de energia renovável em muitos países. Alguns dos principais utilizadores de biomassa incluem:</p>
+
+            <p>Estados Unidos: Tem uma capacidade instalada significativa de geração de energia a partir de biomassa, com aproximadamente 16 GW.</p>
+            <p>Brasil: É um dos líderes mundiais no uso de biomassa, especialmente bagaço de cana-de-açúcar, com uma capacidade instalada de cerca de 14 GW.</p>
+            <p>China: Possui uma crescente capacidade de geração de energia de biomassa, com aproximadamente 17 GW.</p>
+            <p>Alemanha: Utiliza uma variedade de fontes de biomassa, incluindo resíduos agrícolas e florestais, com uma capacidade instalada de cerca de 9 GW.</p>
+            <p>Índia: Tem uma capacidade instalada de cerca de 10 GW, com foco em resíduos agrícolas e florestais.</p>
+            <p>Segundo a Agência Internacional de Energia Renovável (IRENA), a capacidade total instalada de energia de biomassa no mundo é de aproximadamente 130 GW, e está em crescimento devido ao aumento do interesse em fontes de energia renovável e sustentável.</p>
+
+            <h2>Importância e Futuro da Energia de Biomassa</h2>
+            <p>A energia de biomassa oferece várias vantagens:</p>
+
+            <p>Renovabilidade: A biomassa é uma fonte de energia renovável, desde que as práticas de cultivo e coleta sejam sustentáveis.</p>
+            <p>Redução de Resíduos: O uso de resíduos agrícolas, florestais e urbanos para a geração de energia ajuda a reduzir a quantidade de resíduos destinados a aterros.</p>
+            <p>Emissões de Carbono: A queima de biomassa libera CO₂, mas é considerado neutro em carbono, pois a quantidade de CO₂ liberada é aproximadamente igual à quantidade absorvida pelas plantas durante seu crescimento.</p>
+            <p>No entanto, a energia de biomassa também enfrenta desafios:</p>
+
+            <p>Sustentabilidade: A coleta e o uso de biomassa devem ser geridos de forma sustentável para evitar a degradação do solo e a perda de biodiversidade.</p>
+            <p>Emissões: Embora a biomassa seja considerada neutra em carbono, a combustão pode liberar outros poluentes, como partículas e óxidos de nitrogênio, que precisam ser controlados.</p>
+            <p>Custo e Eficiência: A infraestrutura e os custos de conversão ainda podem ser altos em comparação com outras fontes de energia renovável.</p>
+            <p>O futuro da energia de biomassa envolve o desenvolvimento de tecnologias mais eficientes e sustentáveis, como a melhoria dos processos de gaseificação e digestão anaeróbica, além da integração com outras fontes de energia renovável para criar sistemas de energia híbridos e mais resilientes.</p>
+
+            <p>Em resumo, os geradores de biomassa são uma parte importante da matriz energética global, contribuindo para a diversificação das fontes de energia e ajudando a mitigar as mudanças climáticas. Com o avanço tecnológico e a adoção de práticas sustentáveis, a energia de biomassa pode desempenhar um papel ainda mais significativo no futuro energético mundial.</p>
+        </section>
     </main>
+    
     <script src="scripts/geradores.js"></script>
-    <script src="scripts/visivel.js"></script>
+    <script src="scripts/menu.js"></script>
         
 </body>
 </html>

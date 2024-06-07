@@ -138,6 +138,8 @@ section.caixa > h2{
 section.caixa > p{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 21px;
+    text-indent: 15px;
+    margin-bottom: 10px;
 }
 
 strong{

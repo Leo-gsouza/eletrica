@@ -58,7 +58,7 @@ section.botoes > img#logo{
 section.botoes > a{/* Para todos os botoes */
     width: 126px;
     height: 46px;
-
+    color: lightgoldenrodyellow;
     color: black;
     background-color: white;
     border: 5px solid var(--cor1);
