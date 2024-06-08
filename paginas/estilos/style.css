@@ -283,7 +283,7 @@ input#area{
     left: 165px;
 }
 
-/* ============================================ RESISTIVIDADE ====================================== */
+/* ============================================ GERADORES ====================================== */
 
 main#principal > div#botoes.quebraLinha{
     width: 280px;
@@ -308,5 +308,73 @@ p#resumo{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
     color: white;
+}
+
+/* ======================================= CONDUTORES======================================= */
+
+section.caixa > div.mais{
+    display: none;
+    width: 280px;
+    margin: auto;
+    margin-top: -2px;
+    margin-bottom: 10px;
+    padding: 20px 5px;
+
+    background-color: lightgoldenrodyellow;
+    box-shadow: 0px 0px 10px var(--cor3);
+}
+
+
+section.caixa > p.botaoMais{
+    display: block;
+    margin: auto;
+    width: 280px;
+    padding: 5px;
+
+    text-align: center;
+
+    background-color: lightgoldenrodyellow; 
+    border: 1px solid var(--cor2);
+
+}
+
+div#seccao > select#opcao{
+    width: 90px;
+    padding: 8px;
+
+    text-align: center;
+    font-size: 1.1em;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.377);
+}
+
+div#resultado{
+    display: none;
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 8px;
+    width: 240px;
+
+    background-color: white;
+    border: 2px solid var(--cor1);
+
+}
+
+div#resultado > h1{
+    text-align: center;
+    margin-top: 12px;
+    font-size: 1.2em;
+}
+
+div#resultado > h2{
+    text-align: center;
+    margin-top: -20px;
+    font-size: 1.1em;
+}
+
+div#resultado > p{
+    width: 200px;
+    display: block;
+    margin: auto;
+    padding: 15px;
 }
     

@@ -1,6 +1,7 @@
 var somGrandezas = document.getElementById('aud1')
 var somResistividade = document.getElementById('aud2')
 var somGeradores = document.getElementById('aud3')
+var somCircuitos = document.getElementById('aud4')
 
 
 function clicar(button, audio){
@@ -21,5 +22,9 @@ somResistividade.addEventListener('ended', function(){
 
 somGeradores.addEventListener('ended', function(){
     window.location.href = 'paginas/geradores.html'
+})
+
+somCircuitos.addEventListener('ended', function(){
+    window.location.href = 'paginas/condutores.html'
 })
         
