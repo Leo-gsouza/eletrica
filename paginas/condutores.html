@@ -17,8 +17,8 @@
         <div>
             <p><a href="../index.html">Home</a></p>
             <p><a href="../paginas/grandezas-eletricas.html">Grandezas</a></p>
+            <p><a href="../paginas/resistividade.html">Resistividade</a></p>
             <p><a href="../paginas/geradores.html">Geradores</a></p>
-            <p><a href="#">vazio</a></p>
             <p><a href="#">vazio</a></p>
         </div>
     </menu>
@@ -37,12 +37,12 @@
                 <p>Insira a secção do condutor e tenha como resultado sua capacidade de corrente</p><br>
                 <p>O valor secção está relacionado a area do condutor em mm<sup>2</sup></p><br>
                 <label for="opcaoMat">Material</label>
-                <select name="material" id="opcaoMat">
+                <select class="selecao" name="material" id="opcaoMat">
                     <option value="cobre">cobre</option>
                     <option value="aluminio">aluminio</option>
-                </select>
+                </select><br><br>
                 <label for="opcaoSec">Secção mm<sup>2</sup></label>
-                <select name="secção" id="opcaoSec">
+                <select class="selecao" name="secção" id="opcaoSec">
                     <option value="0.5">0.5</option>
                     <option value="0.75">0.75</option>
                     <option value="1">1</option>
@@ -63,6 +63,43 @@
 
             <p><strong>Queda de Tensão:</strong> Em longos percursos, a queda de tensão pode ser significativa. A bitola adequada minimiza a queda de tensão ao longo do comprimento do fio, garantindo que a tensão fornecida aos dispositivos seja adequada.</p>
 
+            <p class="botaoMais" onclick="saibaMais(this, queda)">Saiba mais...</p>
+            <div class="mais" id="queda">
+                <p>Insira o material, comprimento, secção mm<sup>2</sup></p><br>
+                <p>Vamos considerar uma tensão de 220V e um equipamento ligado a este circuito que tem uma <strong>resistencia de 22 ohms</strong> </p><br>
+                <p>O resultado será o valor da queda de tensão sobre o condutor. Exemplo: O condutor vai estar em série com o equipamento, ou seja, a tensão será divida entre o condutor e o equipamento com base em suas resistencias</p><br>
+
+                <label for="opcaoMat2">Material</label>
+                <select class="selecao" name="material" id="opcaoMat2">
+                    <option value="cobre">cobre</option>
+                    <option value="aluminio">aluminio</option>
+                </select><br><br>
+                    
+                <label for="opcaoSec2">Secção mm<sup>2</sup></label>
+                <select class="selecao" name="secção" id="opcaoSec2">
+                    <option value="0.5">0.5</option>
+                    <option value="0.75">0.75</option>
+                    <option value="1">1</option>
+                    <option value="1.5">1.5</option>
+                    <option value="2.5">2.5</option>
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                    <option value="10">10</option>
+                    <option value="16">16</option>
+                    <option value="25">25</option>
+                    <option value="35">35</option>
+                    <option value="50">50</option>
+                    <option value="70">70</option>
+                </select><br><br>
+
+                <label for="comp">Comprimento</label>
+                <input type="number" name="comprimento" id="comp"><br>
+
+                <input type="button" value="Buscar" onclick="queda(opcaoSec2, opcaoMat2, comp, resultado2)">
+
+                <div id="resultado2"></div>
+            </div>
+                        
             <p><strong>Condutores em Conduítes ou Eletrodutos:</strong> Quando vários condutores passam pelo mesmo conduíte, o calor gerado aumenta. Isso pode exigir um aumento na secção do condutor para evitar superaquecimento.</p>
 
             <p><strong>Normas e Regulamentações:</strong> As normas locais, como a NBR 5410 no Brasil, estabelecem requisitos específicos para a secção mínima dos condutores em função da corrente e do tipo de circuito</p>.
