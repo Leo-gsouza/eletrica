@@ -185,8 +185,8 @@ legend{
 }
 
 label{
-    display: inline-block;
-    width: 130px;
+    position: absolute;
+    left: 10px;
     text-align: left;
     font-size: 1.2em;
     text-transform: uppercase;
@@ -195,18 +195,33 @@ label{
 
 }
 
-input[type='number']{
+input{
+    position: absolute;
+    left: 165px;
     text-align: center;
-    width: 70px;
-    height: 20px;
-    margin: 2px 1px;
-    padding: 3px 1px;
+    width: 100px;
+    padding: 2px 1px;
 
     border: 2px solid var(--cor4);
     font-size: 1.2em;
 }
 
+select{
+    position: absolute;
+    left: 165px;
+    text-align: center;
+    width: 107px;
+    height: 30px;
+    padding: 3px 1px;
+
+    border: 2px solid var(--cor4);
+    font-size: 1.1em;
+}
+
 input[type='button']{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: block;
     margin: auto;
     margin-top: 15px;
@@ -251,40 +266,6 @@ section.caixa > img:hover{
     border: 2px solid var(--cor1);
 }
 
-
-label#material{
-    display: block;
-    margin: auto;
-    text-align: center;
-    font-size: 1.2em;
-    margin-bottom: -25px;
-}
-
-fieldset > select#opcao{
-    display: block;
-    margin: auto;
-    width: 240px;
-    padding: 7px;
-    margin-top: 3px;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    text-align: center;
-    border: 2px solid var(--cor4);
-}
-
-
-input#comprimento{
-    width: 93px;
-    position: absolute;
-    left: 165px;
-}
-
-input#area{
-    width: 93px;
-    position: absolute;
-    left: 165px;
-}
-
 /* ============================================ GERADORES ====================================== */
 
 main#principal > div#botoes.quebraLinha{
@@ -314,89 +295,38 @@ p#resumo{
 
 /* ======================================= CONDUTORES======================================= */
 
-section.caixa > p.botaoMais{
-    display: block;
-    margin: auto;
-    margin-bottom: 20px;
-    width: 280px;
-    padding: 5px;
-
-    text-align: center;
-
-    background-color: lightgoldenrodyellow; 
-    border: 1px solid var(--cor2);
-}
-
-section.caixa > div.mais{
-    position: relative;
-    display: none;
-    width: 280px;
-    margin: auto;
-    margin-top: -20px;
-    margin-bottom: 10px;
-    padding: 20px 5px;
-
-    background-color: lightgoldenrodyellow;
-    box-shadow: 0px 0px 10px var(--cor3);
-}
-
-select.selecao{
-    width: 75px;
-    padding: 4px;
-    margin-bottom: 15px;
-
-    text-align: center;
-    font-size: 1.1em;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.377);
-}
-
-select#opcaoSec, select#opcaoSec2{
-    position: absolute;
-    left: 160px;
-
-}
-
-select#opcaoMat, select#opcaoMat2{
-    position: absolute;
-    left: 160px;
-}
-
-input[type='number']#comp{
-    position: absolute;
-    left: 160px;
-}
-
-
-
-div#resultado{
-    display: none;
-    margin: auto;
-    margin-top: 10px;
-    padding-top: 8px;
-    width: 240px;
-
-    background-color: white;
-    border: 2px solid var(--cor1);
-
-}
-
-
-div#resultado > h2{
+div.resText > h2{
     text-align: center;
     font-size: 1.2em;
     font-weight:normal;
     padding: 10px 0px;
-    margin-top: -10px;
 
-    background-color: var(--cor4);
-    color: white;
-    text-shadow: 0px 0px 20px black;
+    color: var(--cor4);
 }
 
-div#resultado > p{
-    width: 200px;
+div.resText > p{
+    width: 260px;
     display: block;
     margin: auto;
-    padding: 15px;
+    padding: 8px;
+
+    font-size: 1.15em;
+    font-family: var(--font-paragrafo);
 }
+
+div.resText > p > strong{
+    color: darkred;
+    text-transform: uppercase;
+}
+
+div.resImg{
+    width: 270px;
+}
+
+div.resImg > img{
+    display: none;
+    width: 100%;
+}
+
+
     

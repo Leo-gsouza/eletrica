@@ -13,7 +13,7 @@ function clicar(button, audio){
 }
 
 somGrandezas.addEventListener('ended', function(){
-    window.location.href = 'paginas/grandezas-eletricas.html'
+    window.location.href = 'paginas/grandezas.html'
 })
 
 somResistividade.addEventListener('ended', function(){
@@ -25,6 +25,6 @@ somGeradores.addEventListener('ended', function(){
 })
 
 somCircuitos.addEventListener('ended', function(){
-    window.location.href = 'paginas/condutores.html'
+    window.location.href = 'paginas/capacidade.html'
 })
         

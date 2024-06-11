@@ -18,7 +18,7 @@
             <p><a href="../index.html">Home</a></p>
             <p><a href="../paginas/resistividade.html">Resistividade</a></p>
             <p><a href="../paginas/geradores.html">Geradores</a></p>
-            <p><a href="../paginas/condutores.html">Condutores</a></p>
+            <p><a href="../paginas/capacidade.html">Capacidade</a></p>
             <p><a href="#">vazio</a></p>
             
         </div>
@@ -69,12 +69,12 @@
             <fieldset><!-- TENSÃO -->
                 <legend>Informe apenas 2 Valores</legend>
                 <label for="vPotencia">Potencia: </label>
-                <input type="number" name="potencia" id="vPotencia"><br>
+                <input type="number" name="potencia" id="vPotencia"><br><br>
                 <label for="vCorrente">Corrente: </label>
-                <input type="number" name="corrente" id="vCorrente"><br>
+                <input type="number" name="corrente" id="vCorrente"><br><br>
                 <label for="vResistencia">Resistencia: </label>
-                <input type="number" name="resistencia" id="vResistencia"><br>
-                <input type="button" value="Calcular" id="vCalcular"  onclick="tensao(vPotencia, vCorrente, vResistencia, vRes, vCalcular)">
+                <input type="number" name="resistencia" id="vResistencia"><br><br>
+                <input type="button" value="Calcular" id="vCalcular"  onclick="tensao(vPotencia, vCorrente, vResistencia, vRes, vCalcular)"><br><br><br>
                 <div id="vRes" class="resultado"></div>
             </fieldset>
         </section>
@@ -117,12 +117,12 @@
             <fieldset><!-- CORRENTE -->
                 <legend>Informe apenas 2 Valores</legend>
                 <label for="iTensao">Tensão: </label>
-                <input type="number" name="tensao" id="iTensao"><br>
+                <input type="number" name="tensao" id="iTensao"><br><br>
                 <label for="iResistencia">Resistencia: </label>
-                <input type="number" name="resistencia" id="iResistencia"><br>
+                <input type="number" name="resistencia" id="iResistencia"><br><br>
                 <label for="iPotencia">Potencia: </label>
-                <input type="number" name="potencia" id="iPotencia"><br>
-                <input type="button" value="Calcular" id="iCalcular" onclick="corrente(iPotencia, iTensao, iResistencia, iRes, iCalcular)">
+                <input type="number" name="potencia" id="iPotencia"><br><br>
+                <input type="button" value="Calcular" id="iCalcular" onclick="corrente(iPotencia, iTensao, iResistencia, iRes, iCalcular)"><br><br><br>
                 <div id="iRes" class="resultado"></div>
             </fieldset>
         </section>
@@ -167,12 +167,12 @@
             <fieldset><!-- RESISTENCIA -->
                 <legend>Informe apenas 2 Valores</legend>
                 <label for="oTensao">Tensão: </label>
-                <input type="number" name="tensao" id="oTensao"><br>
+                <input type="number" name="tensao" id="oTensao"><br><br>
                 <label for="oCorrente">Corrente: </label>
-                <input type="number" name="corrente" id="oCorrente"><br>
+                <input type="number" name="corrente" id="oCorrente"><br><br>
                 <label for="oPotencia">Potencia: </label>
-                <input type="number" name="potencia" id="oPotencia"><br>
-                <input type="button" value="calcular" id="oCalcular" onclick="resistencia(oPotencia, oTensao, oCorrente, oRes, oCalcular)">
+                <input type="number" name="potencia" id="oPotencia"><br><br>
+                <input type="button" value="calcular" id="oCalcular" onclick="resistencia(oPotencia, oTensao, oCorrente, oRes, oCalcular)"><br><br><br>
                 <div id="oRes" class="resultado"></div>
             </fieldset>
         </section>
@@ -228,12 +228,12 @@
             <fieldset><!-- POTENCIA -->
                 <legend>Informe apenas 2 Valores</legend>
                 <label for="wTensao">Tensão: </label>
-                <input type="number" name="tensao" id="wTensao"><br>
+                <input type="number" name="tensao" id="wTensao"><br><br>
                 <label for="wCorrente">Corrente: </label>
-                <input type="number" name="corrente" id="wCorrente"><br>
+                <input type="number" name="corrente" id="wCorrente"><br><br>
                 <label for="wResistencia">Resistencia: </label>
-                <input type="number" name="resistencia" id="wResistencia"><br>
-                <input type="button" value="calcular" id="wCalcular" onclick="potencia(wTensao, wCorrente, wResistencia, wRes, wCalcular)">
+                <input type="number" name="resistencia" id="wResistencia"><br><br>
+                <input type="button" value="calcular" id="wCalcular" onclick="potencia(wTensao, wCorrente, wResistencia, wRes, wCalcular)"><br><br><br>
                 <div id="wRes" class="resultado"></div>
             </fieldset>
         </section>

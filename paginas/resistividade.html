@@ -16,9 +16,9 @@
     <menu id="itens">
         <div>
             <p><a href="../index.html">Home</a></p>
-            <p><a href="../paginas/grandezas-eletricas.html">Grandezas</a></p>
+            <p><a href="../paginas/grandezas.html">Grandezas</a></p>
             <p><a href="../paginas/geradores.html">Geradores</a></p>
-            <p><a href="../paginas/condutores.html">Condutores</a></p>
+            <p><a href="../paginas/capacidade.html">Capacidade</a></p>
             <p><a href="#">vazio</a></p>
         </div>
     </menu>
@@ -52,17 +52,17 @@
             <p>para realizar o calculo de resistividade de um material abaixo será necessário informar o tipo do material, sua area em mm<sup>2</sup> e por fim o seu comprimento em metros</p>
 
             <fieldset><!-- RESISTIVIDADE -->
-                <label for="" id="material">Material: </label><br>
+                <label for="opcao" id="material">Material: </label>
                 <select name="selecao" id="opcao">
                     <option value="ouro">ouro</option>
                     <option value="aluminio">aluminio</option>
                     <option value="cobre">cobre</option>
-                </select><br>
+                </select><br><br>
                 <label for="area">Area mm<sup>2</sup>: </label>
-                <input type="number" name="area" id="area"><br>
+                <input type="number" name="area" id="area"><br><br>
                 <label for="comprimento">Comprimento:</label>
-                <input type="number" name="comprimento" id="comprimento"><br>
-                <input type="button" value="Buscar" onclick="buscar(opcao, area, comprimento , res, this)">
+                <input type="number" name="comprimento" id="comprimento"><br><br>
+                <input type="button" value="Buscar" onclick="buscar(opcao, area, comprimento , res, this)"><br><br><br>
 
                 
                 <div id="res" class="resultado"></div>
