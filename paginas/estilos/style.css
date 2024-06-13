@@ -293,7 +293,7 @@ p#resumo{
     color: white;
 }
 
-/* ======================================= CONDUTORES======================================= */
+/* ======================================= CAPACIDADE======================================= */
 
 div.resText > h2{
     text-align: center;
@@ -320,12 +320,13 @@ div.resText > p > strong{
 }
 
 div.resImg{
-    width: 270px;
+    width: 280px;
 }
-
+    
 div.resImg > img{
     display: none;
     width: 100%;
+    border: 2px solid var(--cor4);
 }
 
 
