@@ -14,7 +14,7 @@ function capacidade(mat, sec, met, iso, res, imagem){
     
     /* COBRE PVC  A1 */
     if (material == 'cobre' && metodo == 'A1' && isolamento =='pvc'){
-        img.src = "../imagens/a1.JPG"
+        img.src = "../imagens/metodob2.JPG"
         if (seccao == '0.5'){
             capacidade2 = '7 amperes'
             capacidade3 = '7 amperes'
@@ -179,7 +179,7 @@ function capacidade(mat, sec, met, iso, res, imagem){
 
      /* COBRE PVC B1 */
     }else if (material == 'cobre' && metodo == 'B2' && isolamento =='pvc'){
-        img.src = "../img/metodob2.JPG"
+        img.src = "../imagens/metodob2.JPG"
         if (seccao == '0.5'){
             capacidade2 = '9 amperes'
             capacidade3 = '8 amperes'
@@ -233,7 +233,7 @@ function capacidade(mat, sec, met, iso, res, imagem){
             capacidade3 = '149 amperes'}
         
     }else if (material == 'cobre' && metodo == 'C' && isolamento =='pvc'){
-        img.src = "../img/metodoc.JPG"
+        img.src = "../imagens/metodoc.JPG"
         if (seccao == '0.5'){
             capacidade2 = '10 amperes'
             capacidade3 = '9 amperes'
