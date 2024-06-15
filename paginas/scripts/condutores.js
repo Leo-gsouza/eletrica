@@ -285,7 +285,62 @@ function capacidade(mat, sec, met, iso, res, imagem){
         }else if( seccao == '70'){
             capacidade2 = '213 amperes'
             capacidade3 = '184 amperes'}
-    
+
+/* ISOLAMENTO EPR */
+    }else if (material == 'cobre' && metodo == 'A1' && isolamento == 'epr'){
+        img.src = "../imagens/a1.JPG"
+        if (seccao == '0.5'){
+            capacidade2 = '10 amperes'
+            capacidade3 = '9 amperes'
+
+        }else if ( seccao == '0.75'){
+            capacidade2 = '12 amperes'
+            capacidade3 = '11 amperes'
+
+        }else if( seccao == '1'){
+            capacidade2 = '15 amperes'
+            capacidade3 = '13 amperes'
+
+        }else if ( seccao == '1.5'){
+            capacidade2 = '19 amperes'
+            capacidade3 = '17 amperes'
+
+        }else if( seccao == '2.5'){
+            capacidade2 = '26 amperes'
+            capacidade3 = '23 amperes'
+
+        }else if ( seccao == '4'){
+            capacidade2 = '35 amperes'
+            capacidade3 = '31 amperes'
+
+        }else if( seccao == '6'){
+            capacidade2 = '45 amperes'
+            capacidade3 = '40 amperes'
+
+        }else if ( seccao == '10'){
+            capacidade2 = '61 amperes'
+            capacidade3 = '54 amperes'
+
+        }else if( seccao == '16'){
+            capacidade2 = '81 amperes'
+            capacidade3 = '73 amperes'
+
+        }else if ( seccao == '25'){
+            capacidade2 = '106 amperes'
+            capacidade3 = '95 amperes'
+
+        }else if( seccao == '35'){
+            capacidade2 = '131 amperes'
+            capacidade3 = '117 amperes'
+
+        }else if ( seccao == '50'){
+            capacidade2 = '158 amperes'
+            capacidade3 = '141 amperes'
+
+        }else if( seccao == '70'){
+            capacidade2 = '200 amperes'
+            capacidade3 = '179 amperes'}
+
     }
 
 
