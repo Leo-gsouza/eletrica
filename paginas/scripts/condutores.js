@@ -7,7 +7,7 @@ function capacidade(mat, sec, met, iso, res, imagem){
     let capacidade2 = ''
     let capacidade3 = ''
     let resultado = res
-    let img = imagem
+    var img = imagem
 
     resultado.style.display = 'block'
     img.style.display = 'block'
