@@ -179,7 +179,7 @@ function capacidade(mat, sec, met, iso, res, imagem){
 
      /* COBRE PVC B1 */
     }else if (material == 'cobre' && metodo == 'B2' && isolamento =='pvc'){
-        img.src = "../imagens/b2.JPG"
+        img.src = "../imagens/B2.JPG"
         if (seccao == '0.5'){
             capacidade2 = '9 amperes'
             capacidade3 = '8 amperes'
