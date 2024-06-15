@@ -179,7 +179,7 @@ function capacidade(mat, sec, met, iso, res, imagem){
 
      /* COBRE PVC B1 */
     }else if (material == 'cobre' && metodo == 'B2' && isolamento =='pvc'){
-        img.src = "../imagens/b1.JPG"
+        img.src = "../imagens/metodob2.JPG"
         if (seccao == '0.5'){
             capacidade2 = '9 amperes'
             capacidade3 = '8 amperes'
@@ -232,9 +232,61 @@ function capacidade(mat, sec, met, iso, res, imagem){
             capacidade2 = '168 amperes'
             capacidade3 = '149 amperes'}
         
+    }else if (material == 'cobre' && metodo == 'C' && isolamento =='pvc'){
+        img.src = "../imagens/metodoc.JPG"
+        if (seccao == '0.5'){
+            capacidade2 = '10 amperes'
+            capacidade3 = '9 amperes'
+
+        }else if ( seccao == '0.75'){
+            capacidade2 = '13 amperes'
+            capacidade3 = '11 amperes'
+
+        }else if( seccao == '1'){
+            capacidade2 = '15 amperes'
+            capacidade3 = '14 amperes'
+
+        }else if ( seccao == '1.5'){
+            capacidade2 = '19.5 amperes'
+            capacidade3 = '17.5 amperes'
+
+        }else if( seccao == '2.5'){
+            capacidade2 = '27 amperes'
+            capacidade3 = '24 amperes'
+
+        }else if ( seccao == '4'){
+            capacidade2 = '36 amperes'
+            capacidade3 = '32 amperes'
+
+        }else if( seccao == '6'){
+            capacidade2 = '46 amperes'
+            capacidade3 = '41 amperes'
+
+        }else if ( seccao == '10'){
+            capacidade2 = '63 amperes'
+            capacidade3 = '57 amperes'
+
+        }else if( seccao == '16'){
+            capacidade2 = '85 amperes'
+            capacidade3 = '76 amperes'
+
+        }else if ( seccao == '25'){
+            capacidade2 = '112 amperes'
+            capacidade3 = '96 amperes'
+
+        }else if( seccao == '35'){
+            capacidade2 = '138 amperes'
+            capacidade3 = '119 amperes'
+
+        }else if ( seccao == '50'){
+            capacidade2 = '168 amperes'
+            capacidade3 = '144 amperes'
+
+        }else if( seccao == '70'){
+            capacidade2 = '213 amperes'
+            capacidade3 = '184 amperes'}
+    
     }
-    
-    
 
 
   /* ======================================RESULT amperesDO======================================= */  
