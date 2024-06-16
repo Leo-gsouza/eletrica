@@ -4,6 +4,13 @@ var somGeradores = document.getElementById('aud3')
 var somCircuitos = document.getElementById('aud4')
 
 
+
+window.addEventListener('pageshow', function(event){
+    if (event.persisted){
+        window.location.reload()
+    }
+})
+
 function clicar(button, audio){
     button.style.scale = '1.2'
     button.style.border = '4px solid #FFD35C'
