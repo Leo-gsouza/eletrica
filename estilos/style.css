@@ -73,7 +73,8 @@ section.botoes > a{/* Para todos os botoes */
 a#botao1{
     position: absolute;
     top: 210px;
-    left: 30px;
+    left: 50%;
+    transform: translateX(-110%);
 
     font-size: 1.2em;
     
@@ -82,7 +83,8 @@ a#botao1{
 a#botao2{
     position: absolute;
     top: 210px;
-    left: 190px;
+    left: 50%;
+    transform: translateX(10%);
 
     font-size: 1.2em;
 }
@@ -90,7 +92,8 @@ a#botao2{
 a#botao3{
     position: absolute;
     top: 290px;
-    left: 30px;
+    left: 50%;
+    transform: translateX(-110%);
 
     font-size: 1.2em;
 }
@@ -98,7 +101,17 @@ a#botao3{
 a#botao4{
     position: absolute;
     top: 290px;
-    left: 190px;
+    left: 50%;
+    transform: translateX(10%);
+
+    font-size: 1.2em;
+}
+
+a#botao5{
+    position: absolute;
+    top: 370px;
+    left: 50%;
+    transform: translateX(-110%);
 
     font-size: 1.2em;
 }

@@ -2,6 +2,7 @@ var somGrandezas = document.getElementById('aud1')
 var somResistividade = document.getElementById('aud2')
 var somGeradores = document.getElementById('aud3')
 var somCircuitos = document.getElementById('aud4')
+var somQueda = document.getElementById('aud5')
 
 
 
@@ -12,9 +13,8 @@ window.addEventListener('pageshow', function(event){
 })
 
 function clicar(button, audio){
-    button.style.scale = '1.2'
-    button.style.border = '4px solid #FFD35C'
-    button.style.boxShadow = '0px 0px 15px white'
+    button.style.border = '6px solid #FFD35C'
+    button.style.boxShadow = '0px 0px 25px white'
     audio.play()
 
 }
@@ -33,5 +33,9 @@ somGeradores.addEventListener('ended', function(){
 
 somCircuitos.addEventListener('ended', function(){
     window.location.href = 'paginas/capacidade.html'
+})
+
+somQueda.addEventListener('ended', function(){
+    window.location.href = 'paginas/queda.html'
 })
         
