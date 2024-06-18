@@ -3,6 +3,7 @@ var somResistividade = document.getElementById('aud2')
 var somGeradores = document.getElementById('aud3')
 var somCircuitos = document.getElementById('aud4')
 var somQueda = document.getElementById('aud5')
+var somDisjuntor = document.getElementById('aud6')
 
 
 
@@ -37,5 +38,9 @@ somCircuitos.addEventListener('ended', function(){
 
 somQueda.addEventListener('ended', function(){
     window.location.href = 'paginas/queda.html'
+})
+
+somDisjuntor.addEventListener('ended', function(){
+    window.location.href = 'paginas/disjuntor.html'
 })
         

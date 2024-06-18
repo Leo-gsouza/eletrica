@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Disjuntor</title>
+</head>
+<body>
+    <header>
+        <img src="../imagens/logo1.png" alt="Logo" id="logo">
+        <span class="material-symbols-outlined" id="menu" onclick="menu()">menu</span>
+    </header>
+    <menu id="itens">
+        <div>
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../paginas/grandezas.html">Grandezas</a></p>
+            <p><a href="../paginas/resistividade.html">Resistividade</a></p>
+            <p><a href="../paginas/geradores.html">Geradores</a></p>
+            <p><a href="../paginas/capacidade.html">Capacidade</a></p>
+            <p><a href="../paginas/queda.html">Queda de Tensão</a></p>
+        </div>
+    </menu>
+    <main id="principal">
+        <h1 id="titulo">Disjuntor</h1> 
+        
+        <section class="caixa" id="condutores" style="display: block;">
+            <h2>O que é um disjuntor?</h2>
+            <p>Um disjuntor é um <strong>dispositivo de proteção elétrica</strong> projetado para interromper o fluxo de corrente elétrica em um circuito quando a corrente excede um valor seguro predefinido. Ele é essencial em sistemas elétricos para prevenir danos causados por sobrecarga ou curto-circuito, protegendo assim equipamentos, fios e, principalmente, prevenindo incêndios.</p>
+
+            <h2>Função do disjuntor</h2>
+            <p>A principal função do disjuntor é a proteção dos circuitos elétricos. Ele atua de duas maneiras principais:</p>
+
+            <p><strong>Proteção contra sobrecarga:</strong> Quando há um aumento gradual na corrente que excede o limite seguro por um período prolongado, o disjuntor desarma para proteger o circuito.</p>
+            <p><strong>Proteção contra curto-circuito:</strong> Quando ocorre um curto-circuito, há um aumento súbito e significativo na corrente. O disjuntor desarma quase instantaneamente para interromper o fluxo de corrente e evitar danos graves.</p>
+            <p>Além dessas funções primárias, os disjuntores também são usados para controlar o fornecimento de energia, permitindo ligar e desligar circuitos manualmente.</p>
+
+            <h2>Origem e evolução do disjuntor</h2>
+            <p>Os disjuntores têm suas <strong>origens no final do século XIX e início do século XX</strong>, quando a eletricidade começou a ser usada amplamente para iluminação e força motriz. A necessidade de proteger circuitos e evitar incêndios levou ao desenvolvimento de dispositivos de proteção.</p>
+
+            <h2>Primeiros desenvolvimentos:</h2>
+            <p><strong class="pessoa">Thomas Edison:</strong> Nos anos 1870, Edison desenvolveu os primeiros fusíveis para proteger seus sistemas de iluminação. Os fusíveis eram dispositivos simples que fundiam e interrompiam o circuito quando a corrente excedia um valor seguro.</p>
+            <p><strong class="pessoa">Granville Woods:</strong> Em 1900, Woods, um inventor afro-americano, patenteou um disjuntor automático para trens elétricos, que podia interromper a corrente em caso de sobrecarga.</p>
+                
+            <h2>Evolução dos disjuntores:</h2>
+            <p>Os disjuntores modernos <strong>evoluíram dos fusíveis</strong>. Eles foram desenvolvidos para serem mais seguros e confiáveis, além de poderem ser resetados e usados repetidamente, ao contrário dos fusíveis que precisam ser substituídos após cada operação.</p>
+            <p>O desenvolvimento de disjuntores térmicos e magnéticos permitiu uma proteção mais precisa e rápida. <strong>Disjuntores térmicos utilizam o aquecimento de uma lâmina bimetálica</strong> para desarmar o circuito, enquanto <strong>disjuntores magnéticos usam a força de um eletroímã</strong>.</p>
+
+            <h2>Informações Importantes no Disjuntor Termomagnético</h2>
+            <p>Para a instalação de um disjuntor termomagnético em um sistema de baixa tensão, é crucial entender e interpretar corretamente as informações presentes no disjuntor. A seguir estão as <strong>informações típicas encontradas em um disjuntor termomagnético</strong> e o que cada uma representa:</p>
+
+            <p><strong>Corrente Nominal (In)</strong>: Indica a corrente máxima que o disjuntor pode suportar continuamente sem desarmar.</p>
+            
+            <p><strong>Tensão Nominal (Un)</strong>: Indica a tensão máxima que o disjuntor pode suportar.</p>
+            
+            <p><strong>Capacidade de Curto-Circuito (Icn)</strong>: Indica a corrente máxima de curto-circuito que o disjuntor pode interromper sem sofrer danos.</p>
+            
+            <p><strong>Curva de Desarme:</strong> Identificada por uma letra (B, C, D), representa o comportamento do disjuntor em relação ao tempo e corrente de desarme. <strong class="info"><br>Curva B: 3-5 vezes In <br>Curva C: 5-10 vezes In <br>Curva D: 10-20 vezes In</p><br></strong>
+
+            <p><strong>Número de Pólos:</strong> Indica quantas fases o disjuntor pode proteger. Pode ser <strong class="info"><br>monopolar (1P) <br>bipolar (2P) <br>tripolar (3P)  <br>tetrapolar (4P).</strong></p>
+            
+            
+            <p><strong>Tipo de Desarme:</strong> Térmico para sobrecargas e magnético para curtos-circuitos.</p>
+
+            <p><strong>Frequência Nominal:</strong> A frequência elétrica para a qual o disjuntor é projetado, geralmente 50Hz ou 60Hz.</p>
+
+            <p><strong>Poder de Interrupção em Corrente Alternada (Icu/Ics):</strong>Poder de interrupção em corrente alternada, em conformidade com as normas de segurança. <strong class="info"><br>Icu: Corrente de interrupção máxima. <br>Ics: Corrente de interrupção de serviço.</strong></p>
+
+            <fieldset>
+                <label for="nom">Corrente (In): </label>
+                <select name="corrente nominal" id="nom">
+                    <option value="6">6A</option>
+                    <option value="16">16A</option>
+                    <option value="25">25A</option>
+                    <option value="32">32A</option>
+                    <option value="40">40A</option>
+                    <option value="63">63A</option>
+                </select><br><br>
+
+                <label for="cur">Curva: </label>
+                <select name="curva" id="cur">
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select><br><br>
+
+                <label for="pol">Nº Polos: </label>
+                <select name="polos" id="pol">
+                    <option value="1">Monopolar</option>
+                    <option value="2">Bipolar</option>
+                    <option value="3">Tripolar</option>
+                    <option value="4">Tetrapolar</option>
+                </select><br><br>
+
+                <input type="button" value="Buscar" onclick="disjuntor(nom, cur, pol, res, imagem )"><br><br><br>
+                <div id="res"></div>
+                <div class="resImg">
+                    <img src="../imagens/monopolar6b.jpg" alt="disjuntor" id="imagem">
+                </div><br>
+            </fieldset>
+
+        </section> 
+        <strong>
+            <p></p>        
+        </strong>
+    </main>
+    <script src="scripts/disjuntor.js"></script>
+    <script src="scripts/menu.js"></script>
+        
+</body>
+</html>

@@ -116,4 +116,14 @@ a#botao5{
     font-size: 1.2em;
 }
 
+a#botao6{
+    position: absolute;
+    top: 370px;
+    left: 50%;
+    transform: translateX(10%);
+
+    font-size: 1.4em;
+    line-height: 50px;
+}
+
 

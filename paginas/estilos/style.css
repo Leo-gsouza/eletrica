@@ -152,6 +152,13 @@ strong{
 
 .pessoa{
     color: var(--cor4);
+    font-weight: bolder;
+    font-size: 1.1em;
+    background-color: azure;
+}
+
+strong.info{
+    color: var(--cor6);
 }
 
 .calculos{
