@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Ar Condicionado</title>
+</head>
+<body>
+    <header>
+        <img src="../imagens/logo1.png" alt="Logo" id="logo">
+        <span class="material-symbols-outlined" id="menu" onclick="menu()">menu</span>
+    </header>
+    <menu id="itens">
+        <div>
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../paginas/grandezas.html">Grandezas</a></p>
+            <p><a href="../paginas/resistividade.html">Resistividade</a></p>
+            <p><a href="../paginas/geradores.html">Geradores</a></p>
+            <p><a href="../paginas/capacidade.html">Capacidade</a></p>
+            <p><a href="../paginas/queda.html" class="duasLinhas">Queda de Tensão</a></p>
+            <p><a href="../paginas/disjuntor.html">Disjuntor</a></p>
+        </div>
+    </menu>
+    <main id="principal">
+        <h1 id="titulo">Ar Condicionado</h1> 
+
+        <section class="caixa" id="resistividade" style="display: block;">
+            <h2>Origem</h2>
+         
+            <p>O ar condicionado foi inventado por Willis Haviland Carrier em 1902. Ele desenvolveu o primeiro sistema de ar condicionado para resolver um problema de umidade em uma gráfica de Nova York. Desde então, o ar condicionado evoluiu para se tornar um elemento essencial em residências, escritórios e indústrias.</p>
+
+            <h2>Funcionamento:</h2>
+            <p>Ciclo de Refrigeração:</p>
+            <p>Evaporador: O refrigerante no evaporador absorve o calor do ambiente interno, evaporando-se e transformando-se em gás.</p>
+            <p>Compressor: O gás refrigerante é comprimido, aumentando sua pressão e temperatura.</p>
+            <p>Condensador: O gás quente e pressurizado é liberado no condensador, onde libera calor para o ambiente externo e se condensa de volta em líquido.</p>
+            <p>Válvula de Expansão: O refrigerante líquido passa pela válvula de expansão, onde sua pressão é reduzida, esfriando-se e retornando ao evaporador.</p>
+        
+            <p>Controle de Temperatura:</p>
+            <p>O termostato monitora a temperatura ambiente e controla o ciclo de ligar e desligar do compressor para manter a temperatura desejada.</p>
+            
+            <h2>Como escolher</h2>
+            <p>Escolher o ar condicionado certo para um ambiente envolve vários fatores que garantem que o equipamento seja eficiente e adequado às necessidades específicas do local. Aqui estão os passos detalhados e cálculos necessários para fazer uma escolha informada:</p>
+
+            <p>1. Calcule a Capacidade Necessária em <strong>BTUs</strong></p>
+            <p>A capacidade do ar condicionado é medida em BTUs (British Thermal Units). O cálculo básico para determinar quantos BTUs são necessários leva em conta a área do ambiente, a quantidade de pessoas, a presença de aparelhos eletrônicos, a exposição solar e a qualidade do isolamento térmico.</p>
+
+            <p><strong>Área do Ambiente:</strong></p>
+            <p>Meça o comprimento e a largura do ambiente e multiplique para obter a área em metros quadrados (m²).</p>
+            <p class="calc">Area (m²)= <br>Comprimento (m) x Largura (m)</p>
+
+            <p><strong>Capacidade Básica:</strong></p>
+
+            <p>Multiplique a área por 600 BTUs por metro quadrado (uma regra geral para ambientes residenciais).</p>
+            <p class="calc">Capacidade (BTUs) = <br> Area(m²) x 600 BTU/m²</p>
+
+            <p><strong>Número de Pessoas:</strong></p>
+            <p>Adicione 600 BTUs por pessoa além do ocupante padrão (considerando um ocupante padrão no cálculo básico).</p>
+            <p class="calc">Adicional por Pessoa = <br> Numero de Pessoas x 600 BTUs</p>
+
+            <p><strong>Aparelhos Eletrônicos</strong>:</p>
+            <p>Adicione 500 BTUs por aparelho eletrônico de médio consumo que consomem uma quantidade moderada de energia elétrica, geralmente entre 100 e 1000 watts.</p>
+            <p class="calc">Adicional por Aparelho = <br>Numero de Aparelhos x 500 BTUs</p>
+
+
+            <p><strong>Exposição Solar:</strong></p>
+            <p>Se o ambiente tem alta exposição solar, adicione 10-20% à capacidade calculada.</p>
+            <p class="calc">Ajuste Solar = Capacidade Total x 0.1 ou 0.2</p>
+
+            <fieldset>
+                <label for="area">Area m<sup>2</sup>:</label>
+                <input type="number" name="Area" id="area"><br><br>
+                <label for="pessoas">Nº Pessoas:</label>
+                <input type="number" name="Pessoas" id="pessoas"><br><br>
+                <label for="aparelhos">Nº Aparelhos:</label>
+                <input type="number" name="Aparelhos" id="aparelhos"><br><br>
+                <label for="exposicao">Exp. Sol:</label>
+                <select name="Exposicao" id="exposicao">
+                    <option value="1">SIM</option>
+                    <option value="2">NÃO</option>
+                </select><br><br>
+                <input type="button" value="Calcular" onclick="calcular(area, pessoas, aparelhos, exposicao, res)"><br><br><br>
+                <div class="resText" id="res"></div>
+            </fieldset>
+
+            
+        </section>         
+    </main>
+    <script src="scripts/ar.js"></script>
+    <script src="scripts/menu.js"></script>
+        
+</body>
+</html>                     

@@ -22,7 +22,7 @@
             <p><a href="../paginas/resistividade.html">Resistividade</a></p>
             <p><a href="../paginas/geradores.html">Geradores</a></p>
             <p><a href="../paginas/capacidade.html">Capacidade</a></p>
-            <p><a href="../paginas/queda.html">Queda de Tensão</a></p>
+            <p><a href="../paginas/queda.html" class="duasLinhas">Queda de Tensão</a></p>
         </div>
     </menu>
     <main id="principal">
@@ -30,13 +30,14 @@
         
         <section class="caixa" id="condutores" style="display: block;">
             <h2>O que é um disjuntor?</h2>
-            <p>Um disjuntor é um <strong>dispositivo de proteção elétrica</strong> projetado para interromper o fluxo de corrente elétrica em um circuito quando a corrente excede um valor seguro predefinido. Ele é essencial em sistemas elétricos para prevenir danos causados por sobrecarga ou curto-circuito, protegendo assim equipamentos, fios e, principalmente, prevenindo incêndios.</p>
+            <p>Um disjuntor é um <strong>dispositivo de proteção elétrica</strong> projetado para interromper o fluxo de corrente elétrica em um circuito quando a corrente excede um valor seguro predefinido. Ele é essencial em sistemas elétricos para prevenir danos causados por <strong>sobrecarga</strong> ou <strong>curto-circuito</strong>, protegendo assim equipamentos, fios e, principalmente, prevenindo incêndios.</p>
 
             <h2>Função do disjuntor</h2>
             <p>A principal função do disjuntor é a proteção dos circuitos elétricos. Ele atua de duas maneiras principais:</p>
 
-            <p><strong>Proteção contra sobrecarga:</strong> Quando há um aumento gradual na corrente que excede o limite seguro por um período prolongado, o disjuntor desarma para proteger o circuito.</p>
-            <p><strong>Proteção contra curto-circuito:</strong> Quando ocorre um curto-circuito, há um aumento súbito e significativo na corrente. O disjuntor desarma quase instantaneamente para interromper o fluxo de corrente e evitar danos graves.</p>
+            
+            <p><strong>Sobrecarga:</strong> A sobrecarga refere-se a uma condição em que a corrente elétrica que flui através do circuito excede a capacidade nominal para a qual o disjuntor foi projetado. A maioria dos disjuntores utiliza um elemento bimetálico que se aquece à medida que a corrente elétrica aumenta. Se a corrente exceder a capacidade nominal do disjuntor por um período prolongado, o elemento bimetálico se deforma, acionando o mecanismo de disparo e interrompendo o circuito.</p>
+            <p><strong>Curto-circuito:</strong> É uma falha elétrica que ocorre quando dois pontos de um circuito, que normalmente possuem uma diferença de potencial (tensão), entram em contato direto, resultando em uma corrente elétrica excessiva que desvia do caminho projetado. Esse desvio pode causar danos significativos aos componentes elétricos, aquecimento excessivo e, em casos extremos, incêndios. Disjuntores termomagnéticos possuem um eletroímã que reage rapidamente ao aumento abrupto da corrente. Quando a corrente ultrapassa um limiar específico, o campo magnético criado pelo eletroímã é forte o suficiente para acionar o mecanismo de disparo e abrir os contatos do disjuntor, interrompendo o fluxo de corrente. Isso acontece em milissegundos, minimizando o risco de danos e incêndios..</p>
             <p>Além dessas funções primárias, os disjuntores também são usados para controlar o fornecimento de energia, permitindo ligar e desligar circuitos manualmente.</p>
 
             <h2>Origem e evolução do disjuntor</h2>
@@ -69,39 +70,6 @@
             <p><strong>Frequência Nominal:</strong> A frequência elétrica para a qual o disjuntor é projetado, geralmente 50Hz ou 60Hz.</p>
 
             <p><strong>Poder de Interrupção em Corrente Alternada (Icu/Ics):</strong>Poder de interrupção em corrente alternada, em conformidade com as normas de segurança. <strong class="info"><br>Icu: Corrente de interrupção máxima. <br>Ics: Corrente de interrupção de serviço.</strong></p>
-
-            <fieldset>
-                <label for="nom">Corrente (In): </label>
-                <select name="corrente nominal" id="nom">
-                    <option value="6">6A</option>
-                    <option value="16">16A</option>
-                    <option value="25">25A</option>
-                    <option value="32">32A</option>
-                    <option value="40">40A</option>
-                    <option value="63">63A</option>
-                </select><br><br>
-
-                <label for="cur">Curva: </label>
-                <select name="curva" id="cur">
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                </select><br><br>
-
-                <label for="pol">Nº Polos: </label>
-                <select name="polos" id="pol">
-                    <option value="1">Monopolar</option>
-                    <option value="2">Bipolar</option>
-                    <option value="3">Tripolar</option>
-                    <option value="4">Tetrapolar</option>
-                </select><br><br>
-
-                <input type="button" value="Buscar" onclick="disjuntor(nom, cur, pol, res, imagem )"><br><br><br>
-                <div id="res"></div>
-                <div class="resImg">
-                    <img src="../imagens/monopolar6b.jpg" alt="disjuntor" id="imagem">
-                </div><br>
-            </fieldset>
 
         </section> 
         <strong>

@@ -6,6 +6,8 @@ header{
     height: 80px;
     position: relative;
     background-image: linear-gradient(to right, var(--cor5), var(--cor4));
+
+    box-shadow: 0px 0px 4px black;
 }
 
 header > img#logo{
@@ -49,20 +51,27 @@ menu > div{
 }
 
 menu > div > p > a{
-    height: 25px;
+    height: 40px;
     display: block;
-    width: 130px;
-    margin: 3px;
+    width: 102px;
+    margin: 2px;
     text-align: center;
     text-decoration: none;
-    font-size: 1em;
+    font-size: .8em;
+    text-transform: uppercase;
+    line-height: 40px;
     
     color: var(--cor5);
-    background-color: lightgoldenrodyellow;
-    box-shadow: 2px 2px 5px black;
-    border-radius: 5px;
+    background-color: rgb(248, 248, 239);
+    box-shadow: 0px 0px 1px var(--cor6);
+    border-radius: 3px;
+    border: 4px double var(--cor1);
     
-    padding: 8px;
+    padding: 1px;
+}
+
+menu > div > p > a.duasLinhas{
+    line-height: 21px;
 }
 
 menu > div > p > a:hover{
@@ -75,9 +84,8 @@ menu > div > p > a:hover{
 
 
 main#principal > h1#titulo{
-    padding: 20px;
-    margin-bottom: 10px;
-    
+    padding: 20px 0px 10px 0px;
+    margin-top: 15px;
     font-family: var(--font-paragrafo);
     text-align: center;
     text-transform: uppercase;
@@ -85,7 +93,6 @@ main#principal > h1#titulo{
 
     color: var(--cor6);
     text-shadow: 4px 4px 4px lightgoldenrodyellow;
-
 }
 
 main#principal > div#botoes{
@@ -163,6 +170,19 @@ strong.info{
     font-style: italic;
     padding: 3px;
     font-size: 0.8em;
+}
+
+.calc{
+    text-align: center;
+
+    color: var(--cor5);
+    font-style: italic;
+    font-weight: bold;
+    padding: 5px 1px;
+    font-size: 1em;
+
+    border-radius: 4px;
+    border: 1px solid var(--cor4);
 }
 
 fieldset{

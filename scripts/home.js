@@ -4,6 +4,7 @@ var somGeradores = document.getElementById('aud3')
 var somCircuitos = document.getElementById('aud4')
 var somQueda = document.getElementById('aud5')
 var somDisjuntor = document.getElementById('aud6')
+var somAr = document.getElementById('aud7')
 
 
 
@@ -42,5 +43,9 @@ somQueda.addEventListener('ended', function(){
 
 somDisjuntor.addEventListener('ended', function(){
     window.location.href = 'paginas/disjuntor.html'
+})
+
+somAr.addEventListener('ended', function(){
+    window.location.href = 'paginas/ar.html'
 })
         
