@@ -72,9 +72,7 @@ menu > div > p > a:hover{
 }
 
 /* ==============================        Pagina Gradezas      =============================== */
-body{
-    background-image: linear-gradient(to right, darkslategray, rgb(45, 54, 54));
-}
+
 
 main#principal > h1#titulo{
     padding: 20px;
@@ -82,36 +80,35 @@ main#principal > h1#titulo{
     
     font-family: var(--font-paragrafo);
     text-align: center;
-    font-variant: small-caps;
-    font-size: 2em;
+    text-transform: uppercase;
+    font-size: 1.4em;
 
-    color: var(--cor1);
-    text-shadow: 4px 4px 4px black;
-
+    color: var(--cor6);
+    text-shadow: 4px 4px 4px lightgoldenrodyellow;
 
 }
 
 main#principal > div#botoes{
-    width: 330px;
+    width: 250px;
     margin: auto;
     display: flex;/* container flexivel */
     flex-direction: row;/* Define o eixo principal como horizontal da esquerda para direita */
-    flex-wrap: nowrap;/* Itens fiquem na mesma linha */
+    flex-wrap: wrap;/* Itens fiquem na mesma linha */
     justify-content: space-evenly;/* Distribui os itens uniformemente com espaços iguais entre eles. */
     align-items: stretch;/* Estica os itens para preencher o contêiner (este é o valor padrão) */
 }
 
 main#principal > div > p.button{
-    width: 130px;
+    width: 80px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 0.9em;
-    margin-bottom: 6px;
+    font-size: 1.1em;
+    margin-bottom: 12px;
 
     color: var(--cor6);
     background-color: lightgoldenrodyellow;
     border: 1px solid var(--cor2);
-    box-shadow: 0px 0px 8px var(--cor6);
+    box-shadow: 1px 1px 5px var(--cor6);
 
     padding: 5px 2px;
 
@@ -127,9 +124,6 @@ main#principal > section.caixa{
     text-align: justify;
     font-family: var(--font-paragrafo);
 
-    border: 3px solid var(--cor1);
-    background-color: white;
-    border-radius: 5px;
 }
 
 section.caixa > h2{
@@ -270,15 +264,15 @@ section.caixa > img{
 }
 
 section.caixa > img:hover{
-    transform: scale(1.5);
+    transform: scale(1.6);
     box-shadow: 0px 0px 500px rgb(0, 0, 0);
-    border: 2px solid var(--cor1);
+    border: 3px solid var(--cor1);
 }
 
 /* ============================================ GERADORES ====================================== */
 
 main#principal > div#botoes.quebraLinha{
-    width: 280px;
+    width: 320px;
     margin: auto;
     margin-bottom: 30px;
     display: flex;/* container flexivel */
@@ -289,6 +283,11 @@ main#principal > div#botoes.quebraLinha{
     align-content: space-around;
 }
 
+div#botoes.quebraLinha > p.button{
+    width: 145px;
+    font-size: 1em;
+}
+
 p#resumo{
     width: 290px;
     display: block;
@@ -296,10 +295,10 @@ p#resumo{
     margin-bottom: 20px;
 
     text-align: justify;
-    font-size: 1.3em;
+    font-size: 1.15em;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
-    color: white;
+    color: var(--cor6);
 }
 
 /* ======================================= CAPACIDADE======================================= */

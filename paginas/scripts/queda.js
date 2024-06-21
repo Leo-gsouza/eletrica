@@ -14,7 +14,7 @@ function queda(com, sec, ten, pot, res){
     if (comprimento != '' && potencia != ''){
         resultado.innerHTML = `<h2>Condutor (R) = ${(condutorR).toFixed(2)}Ω</h2> <h2>Equipamento (R) = ${(equipamentoR).toFixed(2)}Ω</h2>
         <div>
-            <p>A queda de tensão sobre o condutor é de <strong>${(resistenciaUnid * condutorR).toFixed(0)}V</strong> <br>A queda de tensão sobre o equipamento é de <strong>${(equipamentoR * resistenciaUnid).toFixed(0)}V</strong></p>
+            <p>A queda de tensão sobre o condutor é de <strong>${(resistenciaUnid * condutorR).toFixed(0)}V</strong> <br>A tensão sobre o equipamento é de <strong>${(equipamentoR * resistenciaUnid).toFixed(0)}V</strong></p>
         </div>` 
     }else{
         alert('Preencha todos os dados')
