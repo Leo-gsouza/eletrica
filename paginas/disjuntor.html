@@ -53,7 +53,8 @@
             <p>O desenvolvimento de disjuntores térmicos e magnéticos permitiu uma proteção mais precisa e rápida. <strong>Disjuntores térmicos utilizam o aquecimento de uma lâmina bimetálica</strong> para desarmar o circuito, enquanto <strong>disjuntores magnéticos usam a força de um eletroímã</strong>.</p>
 
             <h2>Informações Importantes no Disjuntor Termomagnético</h2>
-            <p>Para a instalação de um disjuntor termomagnético em um sistema de baixa tensão, é crucial entender e interpretar corretamente as informações presentes no disjuntor. A seguir estão as <strong>informações típicas encontradas em um disjuntor termomagnético</strong> e o que cada uma representa:</p>
+            <p>Para a instalação de um disjuntor termomagnético em um sistema de baixa tensão, é crucial entender e interpretar corretamente as informações presentes no disjuntor. A seguir estão as <strong>informações típicas encontradas em um disjuntor termomagnético</strong> e o que cada uma representa:</p><br>
+            <img src="../imagens/disjuntor.jpg" alt="disjuntor"><br>
 
             <p><strong>Corrente Nominal (In)</strong>: Indica a corrente máxima que o disjuntor pode suportar continuamente sem desarmar.</p>
             
@@ -61,7 +62,41 @@
             
             <p><strong>Capacidade de Curto-Circuito (Icn)</strong>: Indica a corrente máxima de curto-circuito que o disjuntor pode interromper sem sofrer danos.</p>
             
-            <p><strong>Curva de Desarme:</strong> Identificada por uma letra (B, C, D), representa o comportamento do disjuntor em relação ao tempo e corrente de desarme. <strong class="info"><br>Curva B: 3-5 vezes In <br>Curva C: 5-10 vezes In <br>Curva D: 10-20 vezes In</p><br></strong>
+            <p><strong>Curva de Desarme:</strong> Identificada por uma letra (B, C, D), representa o comportamento do disjuntor em relação ao tempo e corrente de desarme. <strong class="info"></strong></p>
+            <p><strong>Curva B:</strong> Desarma entre 3 a 5 vezes a corrente nominal. Utilizada em circuitos com cargas resistivas, como iluminação e aquecedores elétricos.</p>
+            <p><strong>Curva C:</strong> Desarma entre 5 a 10 vezes a corrente nominal. Usada em circuitos com cargas indutivas moderadas, como motores pequenos e grandes.</p>
+            <p><strong>Curva D:</strong> Desarma entre 10 a 20 vezes a corrente nominal. Indicada para circuitos com cargas altamente indutivas, como grandes motores e transformadores.</p>
+            <img src="../imagens/curvas.JPG" alt="curvas">
+            <h2>Calcule</h2>
+            <p>Calcule o tempo de desarme do disjuntor informando a corrente nominal do disjuntor, curva e por fim a corrente que está circulando pelo circuito</p>
+            <fieldset>
+                <label for="in">Nominal (In):</label>
+                <select name="In" id="cin">
+                    <option value="6">6A</option>
+                    <option value="10">10A</option>
+                    <option value="16">16A</option>
+                    <option value="20">20A</option>
+                    <option value="25">25A</option>
+                    <option value="32">32A</option>
+                    <option value="40">40A</option>
+                    <option value="50">50A</option>
+                    <option value="63">63A</option>
+                </select><br><br>
+
+                <label for="curva">Curva:</label>
+                <select name="Curva" id="curva">
+                    <option value="b">B</option>
+                    <option value="c">C</option>
+                    <option value="d">D</option>
+                </select><br><br>
+
+                <label for="amper">Corrente(I): </label>
+                <input type="number" name="amper" id="amper"><br><br>
+
+                <input type="button" value="Calcular" onclick="calcular(cin, curva, amper, res)"><br><br><br>
+                <div class="resText" id="res"></div>
+
+            </fieldset><br><br>
 
             <p><strong>Número de Pólos:</strong> Indica quantas fases o disjuntor pode proteger. Pode ser <strong class="info"><br>monopolar (1P) <br>bipolar (2P) <br>tripolar (3P)  <br>tetrapolar (4P).</strong></p>
             
@@ -72,7 +107,6 @@
 
             <p><strong>Poder de Interrupção em Corrente Alternada (Icu/Ics):</strong>Poder de interrupção em corrente alternada, em conformidade com as normas de segurança. <strong class="info"><br>Icu: Corrente de interrupção máxima. <br>Ics: Corrente de interrupção de serviço.</strong></p>
 
-            <img src="../imagens/disjuntor.jpg" alt="disjuntor">
 
         </section> 
         <strong>
