@@ -32,10 +32,6 @@ html, body{
     height: 100vh;
 }
 
-
-
-
-
 /* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬        Section Botoes      ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
 
 section.botoes{
@@ -47,12 +43,49 @@ section.botoes{
     background-image:linear-gradient(to right, var(--cor4) , var(--cor5));
 }
 
-section.botoes > img#logo{
+section.botoes > img#logo1{
     position: absolute;
     left: 50%;
-    top: 45px;
+    top: 35px;
     transform: translateX(-50%);
-    width: 130px;
+    width: 120px;
+
+    animation: raio 2s infinite alternate;
+}
+
+@keyframes raio{
+    0%{
+        width: 120px;
+        filter: saturate(1);
+    }
+
+    100%{
+        top: 32px;
+        width: 130px;
+        filter: saturate(3);
+    }
+}
+
+section.botoes > img#logo2{
+    position: absolute;
+    left: 50%;
+    top: 35px;
+    transform: translateX(-50%);
+    width: 120px;
+
+    animation: engrenagem 5s infinite normal;
+}
+
+@keyframes engrenagem{
+    0%{ 
+        transform: translateX(-50%) rotate(0deg);
+        filter:brightness(1);
+    }
+
+    100%{
+        transform: translateX(-50%) rotate(360deg);
+        filter: brightness(1);
+    }
 }
 
 
@@ -71,7 +104,7 @@ section.botoes > a{/* Para todos os botoes */
     text-align: center;
 }
 
-a#botao1{
+a#um{
     position: absolute;
     top: 210px;
     left: 50%;
@@ -81,7 +114,7 @@ a#botao1{
     
 }
 
-a#botao2{
+a#dois{
     position: absolute;
     top: 210px;
     left: 50%;
@@ -90,7 +123,7 @@ a#botao2{
     font-size: 1.2em;
 }
 
-a#botao3{
+a#tres{
     position: absolute;
     top: 290px;
     left: 50%;
@@ -99,7 +132,7 @@ a#botao3{
     font-size: 1.2em;
 }
 
-a#botao4{
+a#quatro{
     position: absolute;
     top: 290px;
     left: 50%;
@@ -108,7 +141,7 @@ a#botao4{
     font-size: 1.2em;
 }
 
-a#botao5{
+a#cinco{
     position: absolute;
     top: 370px;
     left: 50%;
@@ -117,7 +150,7 @@ a#botao5{
     font-size: 1.2em;
 }
 
-a#botao6{
+a#seis{
     position: absolute;
     top: 370px;
     left: 50%;
@@ -127,7 +160,7 @@ a#botao6{
     line-height: 50px;
 }
 
-a#botao7{
+a#sete{
     position: absolute;
     top: 450px;
     left: 50%;
