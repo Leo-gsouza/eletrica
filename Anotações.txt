@@ -10,3 +10,24 @@ A FUNÇÃO TEM VARIOS PARAMETROS REPRESENTADOS PELO elements
 PARA INTEIRAR SOBRE CADA ELEMENTO É USADO O forEach
 A SETA => SUBSTITUIU O USO DE function
 O element É O PARAMETRO USADO 
+
+
+========================================================================================================
+
+document.addEventListener('DOMContentLoaded' , function(){
+    const botoes = document.querySelectorAll('.button')
+    
+    function clicar(event){
+        const botaoId = event.target.getAttribute('id')
+        botaoId.style.color = 'red'
+    }
+    botoes.forEach(botao => {
+        botao.addEventListener('click', clicar)
+    })
+})
+
+/* document.addEventListener('DOMContentLoaded', ...) garante que o script será executado apenas após o carregamento completo do DOM. */
+
+/* const buttons = document.querySelectorAll('.action-btn'); seleciona todos os elementos com a classe button */
+
+/* function clicar(event) { ... } define a função que será chamada quando um botão for clicado. Ela usa event.target.getAttribute('data-id') para obter o data-id do botão clicado. */
