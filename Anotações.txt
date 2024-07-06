@@ -1,0 +1,12 @@
+function visivel(gerador, ...elements){
+    if (gerador.style.display == 'block'){
+        gerador.style.display = 'none'
+
+    }else{gerador.style.display = 'block'
+        elements.forEach(element => element.style.display = 'none')
+    }
+
+A FUNÇÃO TEM VARIOS PARAMETROS REPRESENTADOS PELO elements 
+PARA INTEIRAR SOBRE CADA ELEMENTO É USADO O forEach
+A SETA => SUBSTITUIU O USO DE function
+O element É O PARAMETRO USADO 

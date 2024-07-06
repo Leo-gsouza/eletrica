@@ -46,9 +46,9 @@ section.botoes{
 section.botoes > img#logo1{
     position: absolute;
     left: 50%;
-    top: 53px;
+    top: 45px;
     transform: translateX(-50%);
-    width: 85px;
+    width: 100px;
 
     animation: raio 2s infinite alternate;
 }
@@ -59,18 +59,18 @@ section.botoes > img#logo1{
     }
 
     100%{
-        filter: contrast(1.3);
+        filter: contrast(1.5);
     }
 }
 
 section.botoes > img#logo2{
     position: absolute;
     left: 50%;
-    top: 35px;
+    top: 45px;
     transform: translateX(-50%);
-    width: 120px;
+    width: 90px;
 
-    animation: engrenagem 10s infinite normal;
+    animation: engrenagem 7s infinite normal;
 }
 
 @keyframes engrenagem{
