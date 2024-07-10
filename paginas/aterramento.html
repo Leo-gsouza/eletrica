@@ -19,6 +19,7 @@
         <div>
             <p><a href="../index.html">Home</a></p>
             <p><a href="../paginas/grandezas.html">Grandezas</a></p>
+            <p><a href="../paginas/resistividade.html">Resistividade</a></p>
             <p><a href="../paginas/geradores.html">Geradores</a></p>
             <p><a href="../paginas/capacidade.html">Capacidade</a></p>
             <p><a href="../paginas/queda.html" class="duasLinhas">Queda de Tensão</a></p>
@@ -32,9 +33,9 @@
         <p>Os sistemas de aterramento TT, TN e IT foram desenvolvidos ao longo do tempo para melhorar a segurança e a eficiência das instalações elétricas. Cada sistema tem suas especificidades e é escolhido de acordo com a necessidade de proteção, continuidade de serviço e estabilidade elétrica da instalação. Implementar um sistema de aterramento adequado é fundamental para garantir a segurança das pessoas, a proteção dos equipamentos e a eficiência energética.</p>
 
         <div id="botoes">
-            <p class="button" onclick="visivel(tt, tn, it)" id="b1">TT</p>
-            <p class="button" onclick="visivel(tn, tt, it)" id="b2">TN</p>
-            <p class="button" onclick="visivel(it, tt, tn)" id="b3">IT</p>
+            <p class="button" onclick="visivel(this, [b2, b3], tt, tn, it)" id="b1">TT</p>
+            <p class="button" onclick="visivel(this, [b1, b3], tn, tt, it)" id="b2">TN</p>
+            <p class="button" onclick="visivel(this, [b1, b2], it, tt, tn)" id="b3">IT</p>
         </div>
 
         <section class="caixa" id="tt">

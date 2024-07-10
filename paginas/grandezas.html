@@ -24,16 +24,18 @@
             <p><a href="../paginas/queda.html" class="duasLinhas">Queda de Tensão</a></p>
             <p><a href="../paginas/disjuntor.html">Disjuntor</a></p>
             <p><a href="../paginas/ar.html" class="duasLinhas">Ar Condicionado</a></p>
+            <p><a href="../paginas/aterramento.html">Aterramento</a></p>
+
         </div>
     </menu>
     <main id="principal">
         <h1 id="titulo">Grandezas Elétricas</h1> 
         <p>Grandezas elétricas são medidas que descrevem diferentes aspectos do comportamento e das características da eletricidade em um circuito. Aqui estão as definições das principais grandezas elétricas:</p>
         <div id="botoes">
-            <p onclick="visivel(volt, ampere, ohm , watt, this, b2, b3, b4)" class="button" id="b1">Volt</p>
-            <p onclick="visivel(ampere, volt, ohm, watt,  this, b1, b3, b4)" class="button" id="b2">Ampere</p>
-            <p onclick="visivel(ohm, volt, ampere, watt, this, b1, b2, b4)" class="button" id="b3">Ohm</p>
-            <p onclick="visivel(watt, volt, ampere, ohm, this, b1, b2, b3)" class="button" id="b4">Watt</p>
+            <p onclick="visivel(volt, [ampere, ohm , watt], this, [b2, b3, b4])" class="button" id="b1">Volt</p>
+            <p onclick="visivel(ampere, [volt, ohm, watt],  this, [b1, b3, b4])" class="button" id="b2">Ampere</p>
+            <p onclick="visivel(ohm, [volt, ampere, watt], this, [b1, b2, b4])" class="button" id="b3">Ohm</p>
+            <p onclick="visivel(watt, [volt, ampere, ohm], this, [b1, b2, b3])" class="button" id="b4">Watt</p>
         </div>
 
         <section class="caixa" id="volt">

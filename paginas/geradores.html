@@ -24,19 +24,21 @@
             <p><a href="../paginas/queda.html" class="duasLinhas">Queda de Tensão</a></p>
             <p><a href="../paginas/disjuntor.html">Disjuntor</a></p>
             <p><a href="../paginas/ar.html" class="duasLinhas">Ar Condicionado</a></p>
+            <p><a href="../paginas/aterramento.html">Aterramento</a></p>
+
         </div>
     </menu>
     <main id="principal">
         <h1 id="titulo">Geradores de Energia</h1> 
         <p>Os geradores de energia são dispositivos ou sistemas que produzem energia elétrica a partir de diferentes fontes. Cada tipo de gerador tem uma origem específica, um princípio de funcionamento distinto e um impacto ambiental particular. Vamos explorar alguns dos principais geradores de energia:</p>
         <div id="botoes" class="quebraLinha">
-            <p class="button" onclick="visivel(hid, ter, nuc, eol, sol, geo, bio)" >Hidrelétrica</p>
-            <p class="button" onclick="visivel(ter, hid, nuc, eol, sol, geo, bio)">Termoelétrica</p>
-            <p class="button" onclick="visivel(nuc, hid, ter, eol, sol, geo, bio)">Nuclear</p>
-            <p class="button" onclick="visivel(eol, hid, ter, nuc, sol, geo, bio)">Eólica</p>
-            <p class="button" onclick="visivel(sol, hid, ter, nuc, eol, geo, bio)">Solar</p>
-            <p class="button" onclick="visivel(geo, hid, ter, nuc, eol, sol, bio)">Geotérmica</p>
-            <p class="button" onclick="visivel(bio, hid, ter, nuc, eol, sol, geo)">Biomassa</p>
+            <p class="button" onclick="visivel(hid, [ter, nuc, eol, sol, geo, bio], this, [b7,b2,b3,b4,b5,b6])" id="b1" >Hidrelétrica</p>
+            <p class="button" onclick="visivel(ter, [hid, nuc, eol, sol, geo, bio], this, [b1,b7,b3,b4,b5,b6])" id="b2">Termoelétrica</p>
+            <p class="button" onclick="visivel(nuc, [hid, ter, eol, sol, geo, bio], this, [b1,b2,b7,b4,b5,b6])" id="b3">Nuclear</p>
+            <p class="button" onclick="visivel(eol, [hid, ter, nuc, sol, geo, bio], this, [b1,b2,b3,b7,b5,b6])" id="b4">Eólica</p>
+            <p class="button" onclick="visivel(sol, [hid, ter, nuc, eol, geo, bio], this, [b1,b2,b3,b4,b7,b6])" id="b5">Solar</p>
+            <p class="button" onclick="visivel(geo, [hid, ter, nuc, eol, sol, bio], this, [b1,b2,b3,b4,b5,b7])" id="b6">Geotérmica</p>
+            <p class="button" onclick="visivel(bio, [hid, ter, nuc, eol, sol, geo], this, [b1,b2,b3,b4,b5,b6])" id="b7">Biomassa</p>
         </div>
 
         <section class="caixa" id="hid">
