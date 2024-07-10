@@ -170,4 +170,14 @@ a#sete{
     font-size: 1.2em;
 }
 
+a#oito{
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translateX(10%);
+
+    font-size: 1.2em;
+    line-height: 50px;
+}
+
 

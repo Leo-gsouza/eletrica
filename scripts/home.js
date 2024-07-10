@@ -42,5 +42,9 @@ function clicar(botao, audio){
         efeito.onended = function(){
             window.location.href = 'paginas/ar.html'
         }
+    }else if (botaoId == 'oito'){
+        efeito.onended = function(){
+            window.location.href = 'paginas/aterramento.html'
+        }
     }
 }

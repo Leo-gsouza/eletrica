@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Aterramento</title>
+</head>
+<body>
+    <header>
+        <img src="../imagens/engrenagem.png" alt="logo2" id="logo2">
+        <img src="../imagens/raio.png" alt="logo1" id="logo1">
+        <span class="material-symbols-outlined" id="menu" onclick="menu()">menu</span>
+    </header>
+    <menu id="itens">
+        <div>
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="../paginas/grandezas.html">Grandezas</a></p>
+            <p><a href="../paginas/geradores.html">Geradores</a></p>
+            <p><a href="../paginas/capacidade.html">Capacidade</a></p>
+            <p><a href="../paginas/queda.html" class="duasLinhas">Queda de Tensão</a></p>
+            <p><a href="../paginas/disjuntor.html">Disjuntor</a></p>
+            <p><a href="../paginas/ar.html" class="duasLinhas">Ar Condicionado</a></p>
+        </div>
+    </menu>
+    <main id="principal">
+        <h1 id="titulo">Aterramento</h1> 
+
+        <p>Os sistemas de aterramento TT, TN e IT foram desenvolvidos ao longo do tempo para melhorar a segurança e a eficiência das instalações elétricas. Cada sistema tem suas especificidades e é escolhido de acordo com a necessidade de proteção, continuidade de serviço e estabilidade elétrica da instalação. Implementar um sistema de aterramento adequado é fundamental para garantir a segurança das pessoas, a proteção dos equipamentos e a eficiência energética.</p>
+
+        <div id="botoes">
+            <p class="button" onclick="visivel(tt, tn, it)" id="b1">TT</p>
+            <p class="button" onclick="visivel(tn, tt, it)" id="b2">TN</p>
+            <p class="button" onclick="visivel(it, tt, tn)" id="b3">IT</p>
+        </div>
+
+        <section class="caixa" id="tt">
+            <h1>Sistema TT (Terra-Terra)</h1>
+            <img src="../imagens/tt.jpg" alt="Esquema TT">
+            <h2>Origem e Evolução</h2>
+            <p><strong>Origem:</strong> O sistema TT surgiu como uma solução prática e segura para proteger instalações elétricas residenciais e rurais. Ele foi desenvolvido para atender às necessidades de segurança e eficiência à medida que o uso da eletricidade se tornava mais comum.</p>
+            <p><strong>Evolução:</strong> Com o avanço das normas de segurança elétrica e a crescente compreensão dos riscos associados à eletricidade, o sistema TT foi aprimorado para garantir maior proteção contra choques elétricos.</p>
+
+            <h2>Estrutura e Funcionamento</h2>
+            <p>Neutro da Fonte de Alimentação:</p>
+            <p><strong>Aterramento na Subestação:</strong> No sistema TT, o neutro da fonte de alimentação (por exemplo, o transformador da concessionária de energia) é aterrado na subestação elétrica. Isso cria uma referência de terra no ponto de geração de energia.</p>
+            <p>Aterramento Local:</p>
+
+            <p><strong>Partes Metálicas Expostas:</strong> As partes metálicas expostas das instalações do consumidor (como carcaças de eletrodomésticos e caixas metálicas de distribuição) são conectadas a um sistema de aterramento local. Esse sistema de aterramento local é independente do aterramento da subestação.</p>
+            <p><strong>Eletrodo de Terra:</strong> Um eletrodo de terra (como uma haste de cobre enterrada no solo) é utilizado para conectar as partes metálicas à terra. Esse eletrodo deve ter uma baixa resistência elétrica para garantir a eficiência do sistema.</p>
+            <h2>Funcionalidade</h2>
+            <p><strong>Proteção Contra Choques Elétricos:</strong> O principal objetivo do sistema TT é proteger contra choques elétricos. Se ocorrer uma falha de isolamento, fazendo com que uma parte metálica exposta se torne energizada, a corrente de falha fluirá através do caminho de baixa resistência até a terra, minimizando o risco de choque.</p>
+            <p>Dispositivos de Proteção: Disjuntores diferenciais <strong>(DR)</strong> ou interruptores diferenciais residuais <strong>(IDR)</strong> são utilizados para detectar falhas à terra. Esses dispositivos monitoram a corrente elétrica e desligam o circuito se detectarem uma diferença entre a corrente que entra e a corrente que sai, indicando uma falha à terra.</p>
+            <p><strong>Estabilidade Elétrica:</strong> O sistema TT ajuda a estabilizar a tensão elétrica, fornecendo um ponto de referência seguro para a operação dos dispositivos elétricos e eletrônicos.</p>
+            <h2>Exemplos Práticos</h2>
+            <p><strong>Residências Rurais:</strong> Em áreas rurais, onde a infraestrutura elétrica pode ser menos desenvolvida, o sistema TT é comum por sua simplicidade e eficácia em proteger os habitantes e seus equipamentos.</p>
+            <p><strong>Pequenas Instalações Comerciais:</strong> Pequenos estabelecimentos comerciais também utilizam o sistema TT para garantir a segurança dos clientes e dos funcionários.</p>
+            <h2>Vantagens e Desvantagens</h2>
+            <p><strong>Vantagens:</strong> Simples de Implementar: Relativamente fácil de instalar e manter, especialmente em áreas com pouca infraestrutura.</p>
+            <p>Eficaz na Proteção: Oferece uma boa proteção contra choques elétricos e falhas de isolamento.</p>
+            <p><strong>Desvantagens:</strong> Dependência da Qualidade do Solo: A eficácia do sistema depende da resistência do solo ao redor do eletrodo de terra. Solos com alta resistência podem reduzir a eficiência do aterramento.</p>
+            <p>Necessidade de Manutenção: O eletrodo de terra e as conexões precisam ser periodicamente inspecionados e mantidos para garantir a continuidade e a eficácia do sistema.</p>
+        </section>  
+        
+        <section class="caixa" id="tn">
+            <h1>Sistema de Aterramento TN (Terra-Neutro)</h1>
+            <h2>Origem e Evolução</h2>
+            <p><strong>Origem:</strong> O sistema TN foi desenvolvido para melhorar a segurança e a eficiência das instalações elétricas em ambientes industriais e urbanos, onde é necessário um sistema mais robusto.</p>
+            <p><strong>Evolução:</strong> Com o crescimento das cidades e a industrialização, a necessidade de sistemas elétricos seguros e eficientes levou ao desenvolvimento e aperfeiçoamento do sistema TN.</p>
+            <h2>Estrutura e Subtipos</h2>
+            <p>O sistema TN tem três subtipos principais: <strong>TN-S, TN-C e TN-C-S.</strong> Vamos explorar cada um deles:</p>
+
+            <p><strong>TN-S (Terra Neutro-Separado):</strong></p>
+            <img src="../imagens/tns.jpg" alt="Esquema TN-S">
+
+            <p><strong>Estrutura:</strong> O condutor neutro (N) e o condutor de proteção (PE) são separados ao longo de toda a instalação.</p>
+            <p><strong>Funcionamento:</strong> O neutro da fonte de alimentação é aterrado na subestação, e um condutor de proteção separado é utilizado para conectar todas as partes metálicas expostas à terra.</p>
+
+            <p><strong>TN-C (Terra Neutro-Combinado):</strong></p>
+            <img src="../imagens/tnc.jpg" alt="Esquema TN-C">
+            <p><strong>Estrutura:</strong> O neutro e o condutor de proteção são combinados em um único condutor (PEN) ao longo de toda a instalação.</p>
+            <p><strong>Funcionamento:</strong> O neutro da fonte de alimentação é aterrado na subestação, e o condutor PEN combina as funções de neutro e proteção.</p>
+
+            <p><strong>TN-C-S (Combinado e Separado):</strong></p>
+            <img src="../imagens/tncs.jpg" alt="Esquema TN-C-S">
+
+            <p><strong>Estrutura:</strong> Combina os métodos TN-C e TN-S. O neutro e o condutor de proteção são combinados (PEN) em parte da instalação e separados em outra.</p>
+            <p><strong>Funcionamento:</strong> O neutro da fonte de alimentação é aterrado na subestação. O condutor PEN é usado inicialmente e, em algum ponto da instalação, é separado em condutores neutro (N) e de proteção (PE).</p>
+
+            <h2>Funcionalidade</h2>
+            <p><strong>Proteção Contra Choques Elétricos:</strong> Em todos os subtipos, o sistema TN protege contra choques elétricos. Em caso de falha de isolamento, a corrente de falha flui através do caminho de baixa resistência até a terra, acionando dispositivos de proteção como disjuntores.</p>
+            <p><strong>Dispositivos de Proteção:</strong> Disjuntores diferenciais (DR) e disjuntores de sobrecorrente são usados para detectar falhas e cortar a alimentação elétrica, protegendo tanto as pessoas quanto os equipamentos.</p>
+            <p><strong>Estabilidade Elétrica:</strong> O sistema TN proporciona um ponto de referência estável para a tensão elétrica, garantindo a operação segura e eficiente dos dispositivos elétricos e eletrônicos.</p>
+            <h2>Necessidade</h2>
+            <p><strong>Segurança Pessoal:</strong> Protege contra choques elétricos, garantindo a segurança dos ocupantes das instalações.</p>
+            <p><strong>Proteção de Equipamentos:</strong> Reduz o risco de danos a equipamentos devido a falhas elétricas e surtos de tensão.</p>
+            <p><strong>Conformidade com Normas</strong>: Seguir as normas de aterramento é essencial para estar em conformidade com os regulamentos de segurança elétrica, especialmente em instalações comerciais e industriais.</p>
+            <h2>Exemplos Práticos</h2>
+            <p><strong>Indústrias:</strong> As instalações industriais frequentemente utilizam o sistema TN-S para garantir uma separação clara entre o neutro e o condutor de proteção, oferecendo uma proteção robusta contra falhas.</p>
+            <p><strong>Edifícios Comerciais:</strong> O sistema TN-C-S é comum em grandes edifícios comerciais, onde a flexibilidade e a eficiência são necessárias.</p>
+            <h2>Vantagens e Desvantagens</h2>
+            <p><strong>Vantagens:</strong></p>
+            <p><strong>Robusto e Confiável:</strong> Oferece alta proteção contra falhas elétricas e é adequado para grandes instalações.</p>
+            <p><strong>Flexibilidade:</strong> O sistema TN-C-S oferece a combinação de vantagens dos sistemas TN-C e TN-S.</p>
+            <p><strong>Desvantagens:</strong></p>
+            <p><strong>Complexidade de Instalação:</strong> Pode ser mais complexo e caro de instalar devido à necessidade de condutores adicionais (no caso do TN-S).</p>
+            <p><strong>Risco de Falha no TN-C:</strong> Se o condutor PEN for danificado, pode haver um risco aumentado de falhas.</p>
+        </section>
+            
+        <section class="caixa" id="it">
+            <h1>Sistema de Aterramento IT (Isolado Terra)</h1>
+            <img src="../imagens/ita.jpg" alt="Esquema IT a">
+            <img src="../imagens/itb.jpg" alt="Esquema IT b">
+            <h2>Origem e Evolução</h2>
+            <p><strong>Origem:</strong> O sistema IT foi desenvolvido para situações onde a continuidade do serviço é crucial e a segurança elétrica é primordial, como em hospitais, centros de dados e instalações industriais sensíveis.</p>
+            <p><strong>Evolução:</strong> Com o avanço da tecnologia e a necessidade de sistemas elétricos mais seguros e confiáveis, o sistema IT foi aprimorado para garantir que uma única falha à terra não cause a interrupção do serviço.</p>
+            <h2>Estrutura e Funcionamento</h2>
+            <p>Neutro Isolado:</p>
+            
+            <p><strong>Descrição:</strong> No sistema IT, o ponto neutro do transformador não é diretamente aterrado ou é aterrado através de uma alta impedância. Isso significa que não há uma conexão direta entre o neutro e a terra, ao contrário dos sistemas TT e TN.</p>
+            <p><strong>Impedância:</strong> Em algumas variações, uma alta impedância (resistor ou indutor) é colocada entre o neutro e a terra para limitar a corrente de falha à terra.</p>
+            <p>Aterramento das Partes Metálicas Expostas:</p>
+            
+            <p><strong>Descrição:</strong> As partes metálicas expostas das instalações do consumidor são conectadas a um sistema de aterramento local. Esse sistema é independente do ponto neutro do transformador.</p>
+            <p><strong>Eletrodo de Terra:</strong> Similar aos outros sistemas, um eletrodo de terra é utilizado para conectar as partes metálicas à terra, garantindo a segurança dos ocupantes.</p>
+            <h2>Funcionalidade</h2>
+            <p><strong>Continuidade de Serviço:</strong> O principal benefício do sistema IT é que ele permite a continuidade do serviço mesmo em caso de uma primeira falha à terra. A corrente de falha à terra é limitada, permitindo que a instalação continue operando até que a falha seja corrigida.</p>
+            <p><strong>Proteção Contra Choques Elétricos:</strong> Embora a corrente de falha à terra seja limitada, dispositivos de proteção como disjuntores diferenciais (DR) e monitores de isolamento são usados para detectar e sinalizar falhas.</p>
+            <p><strong>Monitoração Contínua:</strong> Sistemas IT geralmente incluem monitores de isolamento contínuo (IMD) que verificam constantemente o estado de isolamento do sistema e alertam sobre qualquer degradação ou falha.</p>
+            <h2>Necessidade</h2>
+            <p><strong>Continuidade de Operação:</strong> Ideal para ambientes onde a interrupção do serviço não é aceitável, como hospitais, centros de dados e algumas indústrias.</p>
+            <p><strong>Segurança Elétrica:</strong> Proporciona alta segurança elétrica ao limitar a corrente de falha à terra, reduzindo o risco de choques elétricos.</p>
+            <p><strong>Detecção Precoce de Falhas:</strong> Os monitores de isolamento contínuo permitem a detecção precoce de problemas, facilitando a manutenção preventiva e reduzindo o risco de falhas catastróficas.</p>
+            <h2>Exemplos Práticos</h2>
+            <p><strong>Hospitais:</strong> Nos hospitais, a continuidade do serviço elétrico é crucial para a operação de equipamentos médicos vitais. O sistema IT garante que uma falha à terra não cause uma interrupção imediata.</p>
+            <p><strong>Centros de Dados:</strong> Centros de dados utilizam o sistema IT para garantir a continuidade da operação dos servidores e sistemas de TI, minimizando o risco de perda de dados e interrupções de serviço.</p>
+            <p><strong>Indústrias Sensíveis:</strong> Indústrias químicas, petroquímicas e outras instalações sensíveis utilizam o sistema IT para manter a operação contínua e segura, mesmo em caso de falhas elétricas.</p>
+
+            <h2>Vantagens e Desvantagens</h2>
+            <p><strong>Vantagens:</strong></p>
+            <p>Continuidade de Serviço: Permite a operação contínua mesmo em caso de uma primeira falha à terra.</p>
+            <p><strong>Alta Segurança:</strong> Limita a corrente de falha à terra, reduzindo o risco de choques elétricos.</p>
+            <p><strong>Detecção Precoce:</strong> Monitores de isolamento permitem a detecção precoce de problemas, facilitando a manutenção preventiva.</p>
+            <p>Desvantagens:</p>
+            <p><strong>Complexidade e Custo:</strong> A instalação e manutenção de um sistema IT podem ser mais complexas e caras devido aos requisitos de monitoramento e proteção.</p>
+            <p><strong>Requer Monitoramento Contínuo:</strong> A eficácia do sistema depende do monitoramento contínuo do isolamento, necessitando de equipamentos adicionais e treinamento.</p>
+        </section>
+    </main>
+    <script src="scripts/aterramento.js"></script>
+    <script src="scripts/menu.js"></script>
+        
+</body>
+</html>

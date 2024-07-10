@@ -153,6 +153,15 @@ main#principal > section.caixa{
 
 }
 
+section.caixa > h1{
+    font-size: 1.4em;
+    text-align: center;
+    font-family: var(--font-paragrafo);
+
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.295);
+    color: var(--cor4);
+}
+
 section.caixa > h2{
     text-align: center;
     font-family: var(--font-paragrafo);
@@ -162,8 +171,7 @@ section.caixa > h2{
 
 section.caixa > p{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 21px;
-    text-indent: 15px;
+    line-height: 23px;
     margin-bottom: 10px;
 }
 
